@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-theme-quickstart",
+	"id": "nodebb-theme-the-starport",
 	"library": "./lib/theme.js",
 	"hooks": [
 		{

@@ -1,7 +1,7 @@
 {
-    "name": "nodebb-theme-quickstart",
+    "name": "nodebb-theme-the-starport",
     "version": "0.1.0",
-    "description": "Enter a description here",
+    "description": "NodeBB Theme for the Starport",
     "main": "theme.less",
     "keywords": [],
     "license": "MIT",
