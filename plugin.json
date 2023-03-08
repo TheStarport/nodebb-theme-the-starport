@@ -1,6 +1,9 @@
 {
 	"id": "nodebb-theme-the-starport",
 	"library": "./lib/theme.js",
+	"staticDirs": {
+		"images": "public/images"
+	},
 	"hooks": [
 		{
 			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
@@ -14,8 +17,5 @@
 	],
 	"modules": {
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
-	},
-	"staticDirs": {
-		"images": "public/images"
 	}
 }
