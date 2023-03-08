@@ -16,6 +16,6 @@
 		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
 	},
 	"staticDirs": {
-		"public/images": "public/images"
+		"images": "public/images"
 	}
 }
