@@ -1,6 +1,6 @@
 {
     "name": "nodebb-theme-the-starport",
-    "version": "0.1.18",
+    "version": "0.1.19",
     "description": "NodeBB Theme for the Starport",
     "main": "theme.less",
     "keywords": [],
