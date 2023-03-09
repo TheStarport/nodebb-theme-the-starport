@@ -1,11 +1,38 @@
 @import "../nodebb-theme-persona/theme";
+@primary-color: #a1ecfb;
+@secondary-color: #26dafd;
+@highlight-color: rgb(255, 167, 108);
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Electrolize';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Electrolize'), local('Electrolize-Regular'), url(../plugins/nodebb-theme-the-starport/public/fonts/cIf5Ma1dtE0zSiGSiED7AXEBuI8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+/* Navigation */
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: @secondary-color;
+    text-shadow: rgb(161 236 251 / 65%) 0 0 4px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgb(255, 167, 108);
+}
+
+/* Global styling */
 
 body {
-    background: url("../plugins/nodebb-theme-the-starport/images/background.jpg");
+    background: url("../plugins/nodebb-theme-the-starport/public/images/background.jpg");
     background-color: #000;
     background-size: cover;
     display: flex;
-    color: #a1ecfb;
+    color: @primary-color;
 }
 
 main {
@@ -23,26 +50,17 @@ main {
 }
 
 a {
-    color: rgb(255, 167, 108);
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #26dafd;
-    text-shadow: rgb(161 236 251 / 65%) 0 0 4px;
+    color: @highlight-color;
 }
 
 .panel-title {
     text-align: center;
-    color: #a1ecfb;
+    color: @primary-color;
 }
 
 .panel-default>.panel-heading {
-    border-color: #a1ecfb;
+    border-color: @primary-color;
     background-color: transparent;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: rgb(255, 167, 108);
 }
 
 .navbar-default, .cookie-consent, .form-control, .row,
@@ -51,8 +69,16 @@ a {
 .btn-primary {
     background-color: rgba(2, 17, 20, 0.85);
     border-color: #029dbb;
-    color: #a1ecfb;
+    color: @primary-color;
     border-style: solid;
+}
+
+h1 {
+    font-family: 'Electrolize', sans-serif;
+    color: @primary-color;
+    text-shadow: rgb(161 236 251 / 65%) 0 0 4px;
+    text-transform: uppercase;
+    font-size: 28px;
 }
 
 .cookie-consent {
