@@ -3,7 +3,7 @@
 	"library": "./lib/theme.js",
 	"staticDirs": {
 		"images": "public/images",
-		"fonts" :"public/fonts"
+		"fonts": "public/fonts"
 	},
 	"hooks": [
 		{
