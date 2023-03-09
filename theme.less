@@ -14,9 +14,6 @@ main {
 }
 
 .row {
-    border-color: rgb(2, 157, 187);
-    background-color: rgba(2, 17, 20, 0.65);
-    border-style: solid;
     border-width: 1px;
 }
 
@@ -48,7 +45,9 @@ a {
     color: #a1ecfb;
 }
 
-.navbar-default, .cookie-consent, .form-control {
+.navbar-default, .cookie-consent, .form-control, .row,
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, 
+.btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
     background-color: rgba(2, 17, 20, 0.85);
     border-color: #029dbb;
     color: #a1ecfb;
@@ -57,4 +56,10 @@ a {
 .cookie-consent {
     border-style: solid;
     border-width: 1px;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn {
+    border-width: 2px;
 }
