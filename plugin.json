@@ -2,7 +2,8 @@
 	"id": "nodebb-theme-the-starport",
 	"library": "./lib/theme.js",
 	"staticDirs": {
-		"public": "public"
+		"images": "public/images",
+		"fonts" :"public/fonts"
 	},
 	"hooks": [
 		{
