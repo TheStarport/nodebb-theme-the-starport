@@ -79,7 +79,7 @@ main {
     border: 0;
 }
 
-a {
+a, a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover {
     color: @highlight-color;
 }
 
@@ -127,4 +127,12 @@ div#content > .row {
     border-color: @primary-color;
     border-style: solid;
     background-color: rgba(2,17,20,.85);
+}
+
+.stats small {
+    color: @secondary-color;
+}
+
+.breadcrumb>.active {
+    color: @primary-color;
 }
