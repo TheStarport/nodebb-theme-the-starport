@@ -41,6 +41,12 @@
     text-shadow: rgb(161 236 251 / 65%) 0 0 4px;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    text-shadow: rgb(161 236 251 / 65%) 0 0 4px;
+    color: @secondary-color;
+    background-color: transparent;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: @highlight-color;
 }
@@ -120,7 +126,7 @@ a, a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover {
 }
 
 .categories .description, .category .description, .subcategory .description {
-    color: @secondary-color;
+    color: @primary-color;
 }
 
 div#content > .row {
