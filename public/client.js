@@ -26,18 +26,23 @@ $(document).ready(function () {
 	}
 
 	console.log('test');
-	const fadeOutElements = document.querySelectorAll('.navbar dropdown');
+	const fadeOutElements = document.querySelectorAll('.navbar .dropdown');
 	console.log(fadeOutElements);
 
 	document.addEventListener('click', function() {
 		console.log('event fired');
+		let fadeElement = document.getElementById('fade-background');
 		if(shouldFade([...fadeOutElements])) {
 			console.log('should fade');
-			document.getElementById('fade-content').style.display = 'block';
+			fadeElement.classList.remove('fade-out-background');
+			fadeElement.classList.add('fade-in-background');
+			//fadeElement.style.display = 'block';
 		}
 		else {
 			console.log('dont fade');
-			document.getElementById('fade-content').style.display = 'none';
+			fadeElement.classList.remove('fade-in-background');
+			fadeElement.classList.add('fade-out-background');
+			//fadeElement.style.display = 'none';
 		}
 	});
 });
