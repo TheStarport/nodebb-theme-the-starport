@@ -170,6 +170,13 @@ div#content > .row {
 }
 
 /* Faded Background */
+#fade-background {
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    background-color: rgba(2, 17, 20, 0.85); 
+    z-index: 1;
+}
 
 .fade-in-background {
     animation: fadeIn 0.25s;
@@ -178,6 +185,7 @@ div#content > .row {
     -o-animation: fadeIn 0.25s;
     -ms-animation: fadeIn 0.25s;
     opacity: 1;
+    pointer-events: auto;
   }
 
 .fade-out-background {
@@ -187,6 +195,7 @@ div#content > .row {
     -o-animation: fadeOut 0.25s;
     -ms-animation: fadeOut 0.25s;
     opacity: 0;
+    pointer-events: none;
 }
 
 @keyframes fadeIn {

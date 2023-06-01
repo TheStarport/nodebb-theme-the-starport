@@ -23,7 +23,7 @@
 </head>
 
 <body class="{bodyClass} skin-{{{if bootswatchSkin}}}{bootswatchSkin}{{{else}}}noskin{{{end}}}">
-	<div id="fade-background" style="position: absolute; height: 100%; width: 100%; background-color: rgba(2, 17, 20, 0.85); z-index: 1;"></div>
+	<div id="fade-background" class="fade-out-background"></div>
 	<nav id="menu" class="slideout-menu hidden">
 		<!-- IMPORT partials/slideout-menu.tpl -->
 	</nav>
