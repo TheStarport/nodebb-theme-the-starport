@@ -121,14 +121,14 @@ main {
 .navbar-default, .cookie-consent, .form-control,
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, 
 .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary,
-.btn-primary, .quick-search-container, .dropdown-menu {
+.btn-primary, .quick-search-container, .dropdown-menu, .btn-default {
     background-color: rgba(2, 17, 20, 0.85);
     border-color: @secondary-color;
     color: @primary-color;
     border-style: solid;
 }
 
-.jumbotron, .panel-default {
+.jumbotron, .panel-default, .topic-list-header {
     background-color: transparent;
     border: 0;
 }
@@ -159,7 +159,7 @@ main {
     display: none;
 }
 
-.categories .description, .category .description, .subcategory .description {
+.categories .description, .category .description, .subcategory .description, .category>ul>li:not(.unread) h2 a {
     color: @primary-color;
 }
 
