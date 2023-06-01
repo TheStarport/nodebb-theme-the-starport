@@ -3,7 +3,7 @@
 <head>
 	<title>{browserTitle}</title>
 	{{{each metaTags}}}{function.buildMetaTag}{{{end}}}
-	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client{{{if bootswatchSkin}}}-{bootswatchSkin}{{{end}}}{{{ if (languageDirection=="rtl") }}}-rtl{{{ end }}}.css?{config.cache-buster}" />
+	<link rel="stylesheet" type="text/css" href="{relative_path}/assets/client{{{if bootswatchSkin}}}-{bootswatchSkin}{{{end}}}.css?{config.cache-buster}" />
 	{{{each linkTags}}}{function.buildLinkTag}{{{end}}}
 
 	<script>
@@ -11,7 +11,6 @@
 		var app = {
 			user: JSON.parse('{{userJSON}}')
 		};
-
 		document.documentElement.style.setProperty('--panel-offset', `${localStorage.getItem('panelOffset') || 0}px`);
 	</script>
 
@@ -24,7 +23,7 @@
 </head>
 
 <body class="{bodyClass} skin-{{{if bootswatchSkin}}}{bootswatchSkin}{{{else}}}noskin{{{end}}}">
-	<div id="fade-content" style="position: absolute; height: 100%; width: 100%; background-color: rgba(2, 17, 20, 0.85); display: none;"></div>
+	<div id="fade-content" style="position: absolute; height: 100%; width: 100%; background-color: rgba(2, 17, 20, 0.85); display: none; z-index: 1;"></div>
 	<nav id="menu" class="slideout-menu hidden">
 		<!-- IMPORT partials/slideout-menu.tpl -->
 	</nav>
@@ -33,16 +32,11 @@
 	</nav>
 
 	<main id="panel" class="slideout-panel">
-		<nav class="navbar sticky-top navbar-expand-lg bg-light header border-bottom py-0" id="header-menu" component="navbar">
-			<div class="container justify-content-start flex-nowrap">
+		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
+			<div class="container">
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<script>
-			const rect = document.getElementById('header-menu').getBoundingClientRect();
-			const offset = Math.max(0, rect.bottom);
-			document.documentElement.style.setProperty('--panel-offset', offset + `px`);
-		</script>
-		<div class="container pt-3" id="content">
+		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->
 		<!-- IMPORT partials/noscript/message.tpl -->
