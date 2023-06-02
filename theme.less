@@ -52,9 +52,10 @@ a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover,
 
 // Highlight with text shadow
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .btn-link:focus, .navbar-default .btn-link:hover, .cookie-consent a:hover {
+.navbar-default .btn-link:focus, .navbar-default .btn-link:hover, .cookie-consent a:hover, .btn-default:hover {
     color: @secondary-color;
     text-shadow: rgb(161 236 251 / 65%) 0 0 4px;
+    background-color: transparent;
 }
 
 /* Navigation */
@@ -121,11 +122,17 @@ main {
 .navbar-default, .cookie-consent, .form-control,
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, 
 .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary,
-.btn-primary, .quick-search-container, .dropdown-menu, .btn-default {
+.btn-primary, .quick-search-container, .dropdown-menu {
     background-color: rgba(2, 17, 20, 0.85);
     border-color: @secondary-color;
     color: @primary-color;
     border-style: solid;
+}
+
+// Same but with no border
+.btn-default {
+  background-color: rgba(2, 17, 20, 0.85);
+  color: @primary-color;
 }
 
 .jumbotron, .panel-default, .topic-list-header {
