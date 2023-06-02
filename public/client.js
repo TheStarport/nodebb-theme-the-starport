@@ -26,7 +26,7 @@ $(document).ready(function () {
 		return openFound;
 	}
 
-	const fadeOutElements = document.querySelectorAll('.navbar .dropdown, dropdown-toggle');
+	const fadeOutElements = document.querySelectorAll('.navbar .dropdown, .dropdown-toggle');
 
 	document.addEventListener('click', function() {
 		let fadeElement = document.getElementById('fade-background');
