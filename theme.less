@@ -57,7 +57,7 @@ a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover,
 }
 
 // Highlight with text shadow
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
 .navbar-default .btn-link:focus, .navbar-default .btn-link:hover, .cookie-consent a:hover,
 .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default,
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
@@ -100,6 +100,11 @@ a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover,
     background-color: transparent;
 }
 
+.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
 /* Global styling */
 
 body {
@@ -124,9 +129,10 @@ main {
     background-color: rgba(2, 17, 20, 0.85);
 }
 
-a:focus,a:hover {
+a:focus,a:hover, .navbar-default .navbar-nav>li>a:hover {
   color: @highlight-color;
   text-shadow: rgb(255 167 108 / 65%) 0 0 4px;
+  background: transparent;
 }
 
 // Black transparent box with light blue borders
