@@ -19,14 +19,14 @@ $(document).ready(function () {
 	function shouldFade(elements) {
 		let openFound = false;
 		elements.forEach(function(element) {
-			if(element.classList.contains('open')) {
+			if(element.classList.contains('open') || element.getAttribute('aria-expanded') == 'true') {
 				openFound = true;
 			}
 		});
 		return openFound;
 	}
 
-	const fadeOutElements = document.querySelectorAll('.navbar .dropdown');
+	const fadeOutElements = document.querySelectorAll('.navbar .dropdown, dropdown-toggle');
 
 	document.addEventListener('click', function() {
 		let fadeElement = document.getElementById('fade-background');
