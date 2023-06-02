@@ -7,7 +7,7 @@
     document.getElementById('dismiss').addEventListener('click', function(event) {
 		// Save consent cookie and remove warning element
 		event.preventDefault();
-		storage.setItem('cookieconsent', '1');
+		localStorage.setItem('cookieconsent', '1');
 		document.getElementsByClassName('cookie-consent')[0].remove()
 		document.body.removeClass('cookie-consent-open');
 
