@@ -41,7 +41,7 @@ $(document).ready(function () {
 	});
 
 	// Dimiss cookie
-	$('#dismiss').addEventListener('click', function(event) {
+	document.getElementById('dismiss').addEventListener('click', function(event) {
 		// Save consent cookie and remove warning element
 		event.preventDefault();
 		storage.setItem('cookieconsent', '1');
