@@ -15,6 +15,7 @@
 */
 
 $(document).ready(function () {
+	// Fade out background when dropdown is open
 	function shouldFade(elements) {
 		let openFound = false;
 		elements.forEach(function(element) {
@@ -38,4 +39,12 @@ $(document).ready(function () {
 			fadeElement.classList.add('fade-out-background');
 		}
 	});
+
+	// Dimiss cookie
+	$('#dismiss').addEventListener('click', function() {
+		// Save consent cookie and remove warning element
+		storage.setItem('cookieconsent', '1');
+		$('.cookie-consent').remove();
+		$(document.body).removeClass('cookie-consent-open');
+	} );
 });
