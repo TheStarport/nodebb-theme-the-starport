@@ -40,7 +40,8 @@
     color: @primary-color;
 }
 
-small, .topic .posts.timeline [component="topic/event"].timeline-event .timeline-text {
+.stats small, small, .topic .posts.timeline [component="topic/event"].timeline-event .timeline-text,
+.text-muted {
     color: @secondary-color;
 }
 
@@ -50,6 +51,7 @@ a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover,
 .topic [component="post/downvote"], .topic [component="post/upvote"],
 .topic [component="topic/labels"] {
     color: @highlight-color;
+    text-decoration: none;
 }
 
 // Highlight with text shadow
@@ -150,7 +152,7 @@ main {
     color: @primary-color;
 }
 
-.panel-default>.panel-heading, .topic-info, .topic-header {
+.panel-default>.panel-heading, .topic-info, .topic .topic-header {
     border-color: @primary-color;
     background-color: transparent;
 }
@@ -263,4 +265,10 @@ div#content > .row {
   /* Modal */
   .modal-header, .modal-footer {
     border-color: @secondary-color;
+  }
+
+  .alert-warning {
+    border-color: @secondary-color;
+    color: @primary-color;
+    background: transparent;
   }
