@@ -41,7 +41,9 @@
 }
 
 .stats small, small, .topic .posts.timeline [component="topic/event"].timeline-event .timeline-text,
-.text-muted {
+.text-muted, .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, 
+.h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, 
+h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
     color: @secondary-color;
 }
 
@@ -49,7 +51,7 @@
 a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover,
 .dropdown-header, .dropdown-menu>li>form>.btn-link, .dropdown-menu>li>form>button, .highlight,
 .topic [component="post/downvote"], .topic [component="post/upvote"],
-.topic [component="topic/labels"] {
+.topic [component="topic/labels"], .breadcrumb .fa {
     color: @highlight-color;
     text-decoration: none;
 }
@@ -69,8 +71,6 @@ a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover,
 .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
   border-style: none;
 }
-
-
 
 .navbar-right>li>a {
     color: @primary-color !important;
@@ -122,6 +122,11 @@ main {
 
 .alert-window .alert {
     background-color: rgba(2, 17, 20, 0.85);
+}
+
+a:focus,a:hover {
+  color: @highlight-color;
+  text-shadow: rgb(255, 167, 108 / 65%) 0 0 4px;
 }
 
 // Black transparent box with light blue borders
