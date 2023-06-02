@@ -39,13 +39,4 @@ $(document).ready(function () {
 			fadeElement.classList.add('fade-out-background');
 		}
 	});
-
-	// Dimiss cookie
-	document.getElementById('dismiss').addEventListener('click', function(event) {
-		// Save consent cookie and remove warning element
-		event.preventDefault();
-		storage.setItem('cookieconsent', '1');
-		$('.cookie-consent').remove();
-		$(document.body).removeClass('cookie-consent-open');
-	} );
 });
