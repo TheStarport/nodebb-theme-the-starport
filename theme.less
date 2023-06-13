@@ -194,7 +194,7 @@ a:focus,a:hover, .navbar-default .navbar-nav>li>a:hover {
     color: @primary-color;
 }
 
-div#content > .row {
+div#content > .row, .composer {
     border-color: @secondary-color;
     border-style: solid;
     background-color: rgba(2,17,20,.85);
@@ -220,8 +220,17 @@ div#content > .row {
   border-width: 1px;
 }
 
-.composer .title-container .title {
-  font-size: 18px;
+@media (min-width: 992px) {
+  .composer .title-container .title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1199px) {
+  html.composing .composer {
+    left: 0;
+    width: inherit;
+  }
 }
 
 /* Faded Background */
