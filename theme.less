@@ -61,7 +61,8 @@ a.permalink, a.permalink:active, a.permalink:focus, a.permalink:hover,
 .navbar-default .btn-link:focus, .navbar-default .btn-link:hover, .cookie-consent a:hover,
 .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default,
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
-.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover,
+.composer .formatting-bar .formatting-group li:focus, .composer .formatting-bar .formatting-group li:hover
 {
     color: @secondary-color;
     text-shadow: rgb(161 236 251 / 65%) 0 0 4px;
@@ -139,7 +140,8 @@ a:focus,a:hover, .navbar-default .navbar-nav>li>a:hover {
 .navbar-default, .cookie-consent, .form-control,
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, 
 .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary,
-.btn-primary, .quick-search-container, .dropdown-menu, .modal-content {
+.btn-primary, .quick-search-container, .dropdown-menu, .modal-content,
+.bootstrap-tagsinput {
     background-color: rgba(2, 17, 20, 0.85);
     border-color: @secondary-color;
     color: @primary-color;
@@ -205,6 +207,21 @@ div#content > .row {
 
 .pull-right a {
   color: @primary-color;
+}
+
+.write-container {
+  outline: none;
+}
+
+.composer .write, .composer .preview {
+  background: rgba(0,0,0,.6);
+  border-color: @primary-color;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.composer .title-container .title {
+  font-size: 18px;
 }
 
 /* Faded Background */
