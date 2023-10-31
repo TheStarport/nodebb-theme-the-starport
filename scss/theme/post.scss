@@ -1,0 +1,24 @@
+@import "../variables";
+
+.content {
+  > blockquote:before {
+    padding-left: 1rem;
+    content: "\f10d";
+    font-family: FontAwesome;
+    left: -5px;
+    position: absolute;
+    top: 0;
+  }
+
+  > blockquote {
+    border: 2px solid $border-color2 !important;
+    border-left: 0.5rem solid $border-color1 !important;
+    background-color: $background-color_4 !important;
+    color: unset!important;
+    position: relative;
+
+    >p {
+      padding-left: 1rem;
+    }
+  }
+}

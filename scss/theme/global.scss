@@ -1,0 +1,82 @@
+@import '../variables';
+
+html {
+  background-image: url('/plugins/nodebb-theme-the-starport/images/background.jpg');
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a, a:hover {
+  text-shadow: $primary-100-65 0 0 4px;
+}
+
+.body-bg {
+  min-height: 100vh;
+  color: $secondary-100;
+  font-family: $font-secondary;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.6);;
+  overflow-y: unset;
+}
+
+.container-primary {
+  background-color: $bg-primary;
+  border-color: $secondary-100;
+  color: $primary-100;
+  border-style: solid;
+}
+
+.navbar {
+  background-color: $background-color_5;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+
+.navbar-title {
+  font-family: $font-primary;
+  text-decoration: none;
+  color: $primary-100;
+  text-shadow: rgba(172, 249, 251, 0.65) 0 0 4px;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: $primary-100;
+  text-shadow: rgba(172, 249, 251, 0.65) 0 0 4px;
+  font-size: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-items {
+  text-decoration: none;
+  color: $primary-100;
+  text-shadow: rgba(172, 249, 251, 0.65) 0 0 4px;
+  font-size: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .clean-btn {
+    display: none;
+  }
+}
+
+#content {
+  background-color: #0000007A;
+}
+
+.panel {
+  background-color: $bg-primary;
+}
+
+.hover-primary:hover {
+  background-color: $primary-100-65;
+}
+
+@import "post.scss";

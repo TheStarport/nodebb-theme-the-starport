@@ -1,22 +1,27 @@
 {
 	"id": "nodebb-theme-the-starport",
-	"library": "./lib/theme.js",
-	"staticDirs": {
-		"images": "public/images",
-		"fonts": "public/fonts"
-	},
 	"hooks": [
-		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
-		}
+      { "hook": "static:app.load", "method": "init" },
+      { "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+      { "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
+      { "hook": "filter:config.get", "method": "getThemeConfig" },
+      { "hook": "filter:settings.get", "method": "getAdminSettings"},
+      { "hook": "filter:user.saveSettings", "method": "saveUserSettings" },
+      { "hook": "filter:user.profileMenu", "method": "addProfileItem" },
+      { "hook": "filter:middleware.renderHeader", "method": "filterMiddlewareRenderHeader" }
 	],
 	"scripts": [
 		"public/client.js",
-		"../nodebb-theme-persona/public/persona.js",
-		"../nodebb-theme-persona/public/modules/autohidingnavbar.js",
-		"../nodebb-theme-persona/public/modules/quickreply.js"
+		"../nodebb-theme-the-starport/public/the-starport.js"
 	],
 	"modules": {
-		"pulling.js": "node_modules/pulling/build/pulling-drawer.js"
-	}
+      "../admin/plugins/the-starport.js": "public/admin.js",
+      "../client/account/theme.js": "public/settings.js"
+	},
+    "staticDirs": {
+      "images": "public/images",
+      "fonts": "public/fonts",
+      "inter": "node_modules/@fontsource/inter/files",
+      "poppins": "node_modules/@fontsource/poppins/files"
+    }
 }
