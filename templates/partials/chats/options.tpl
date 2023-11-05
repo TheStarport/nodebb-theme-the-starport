@@ -4,7 +4,7 @@
 		<i class="fa fa-search text-muted"></i>
 	</button>
 	<div component="chat/room/search/container" class="position-relative hidden align-self-center">
-		<input component="chat/room/search" class="form-control form-control-sm" placeholder="[[search:type-tosearch]]" style="width: 150px;">
+		<input component="chat/room/search" class="form-control form-control-sm" placeholder="[[search:type-to-search]]" style="width: 150px;">
 		<a component="chat/room/search/clear" href="#" class="hidden px-2 py-1 position-absolute top-50 end-0 translate-middle-y">
 			<i class="fa fa-times text-muted opacity-75"></i>
 		</a>
