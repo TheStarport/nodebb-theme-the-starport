@@ -49,13 +49,13 @@
 						<div class="mb-2 regFormEntry d-flex flex-column gap-2">
 							<label for="register-{regFormEntry.styleName}">{regFormEntry.label}</label>
 							<div id="register-{regFormEntry.styleName}">{{regFormEntry.html}}</div>
-						</div>
+						</div>f
 						{{{ end }}}
 
 						<button class="btn btn-primary" id="register" type="submit">[[register:register_now_button]]</button>
 						<hr/>
 
-						<span class="text-sm">[[register:already_have_account]]</span>
+						<span class="text-sm">[[register:already-have-account]]</span>
 						<a class="btn btn-outline-light text-body" href="{config.relative_path}/login">[[global:login]]</a>
 
 						<input id="token" type="hidden" name="token" value="" />

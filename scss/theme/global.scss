@@ -79,4 +79,10 @@ a, a:hover {
   background-color: $primary-100-65;
 }
 
+@media (max-width: 992`px) {
+  .mobile-hide {
+    display: none!important;
+  }
+}
+
 @import "post.scss";

@@ -23,16 +23,10 @@
 	{{{end}}}
 </head>
 
-<body class="body-bg {bodyClass} skin-{{{if bootswatchSkin}}}{bootswatchSkin}{{{else}}}noskin{{{end}}}">
+<body class="body-bg {bodyClass} noskin">
 	<div class="layout-container d-flex justify-content-between pb-4 pb-md-0">
-        <nav id="menu" class="slideout-menu hidden">
-
-        </nav>
-        <nav id="chats-menu" class="slideout-menu hidden">
-
-        </nav>
 		<main id="panel" class="d-flex flex-column flex-grow-1" style="min-height: 100vh">
-            <nav class="navbar sticky-top navbar-expand-lg container-primary border-0 border-bottom" id="header-menu" component="navbar">
+            <nav class="navbar sticky-top navbar-expand-lg container-primary border-0 border-bottom mobile-hide" id="header-menu" component="navbar">
                 <div class="container justify-content-start flex-nowrap">
                     <!-- IMPORT partials/header/menu.tpl -->
                 </div>

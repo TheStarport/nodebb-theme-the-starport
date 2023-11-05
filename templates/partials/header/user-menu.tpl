@@ -7,29 +7,29 @@
     <ul id="user-control-list" component="header/usercontrol" class="dropdown-menu dropdown-menu-end" aria-labelledby="user_dropdown">
         <li>
             <a class="dropdown-item" component="header/profilelink" href="{relative_path}/user/{user.userslug}">
-                <i component="user/status" class="fa fa-fw fa-circle status {user.status}"></i> <span component="header/username">{user.username}</span>
+                <i component="user/status" class="fa fa-fw fa-circle status {user.status}" style="box-sizing: initial"></i> <span component="header/username">{user.username}</span>
             </a>
         </li>
         <li role="presentation" class="dropdown-divider"></li>
         <li><h6 class="dropdown-header">[[global:status]]</h6></li>
         <li>
             <a href="#" class="dropdown-item user-status {{{ if user.online }}}selected{{{ end }}}" data-status="online">
-                <i class="fa fa-fw fa-circle status online"></i><span> [[global:online]]</span>
+                <i class="fa fa-fw fa-circle status online" style="box-sizing: initial"></i><span> [[global:online]]</span>
             </a>
         </li>
         <li>
             <a href="#" class="dropdown-item user-status {{{ if user.away }}}selected{{{ end }}}" data-status="away">
-                <i class="fa fa-fw fa-circle status away"></i><span> [[global:away]]</span>
+                <i class="fa fa-fw fa-circle status away" style="box-sizing: initial"></i><span> [[global:away]]</span>
             </a>
         </li>
         <li>
             <a href="#" class="dropdown-item user-status {{{ if user.dnd }}}selected{{{ end }}}" data-status="dnd">
-                <i class="fa fa-fw fa-circle status dnd"></i><span> [[global:dnd]]</span>
+                <i class="fa fa-fw fa-circle status dnd" style="box-sizing: initial"></i><span> [[global:dnd]]</span>
             </a>
         </li>
         <li>
             <a href="#" class="dropdown-item user-status {{{ if user.offline }}}selected{{{ end }}}" data-status="offline">
-                <i class="fa fa-fw fa-circle status offline"></i><span> [[global:invisible]]</span>
+                <i class="fa fa-fw fa-circle status offline" style="box-sizing: initial"></i><span> [[global:invisible]]</span>
             </a>
         </li>
         <li role="presentation" class="dropdown-divider"></li>

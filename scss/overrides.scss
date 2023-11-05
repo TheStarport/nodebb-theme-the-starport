@@ -44,6 +44,10 @@ $btn-ghost-active-color: lighten($btn-ghost-hover-color, 5%);
 $btn-ghost-hover-color-dark: mix($dark, $light, 90%);
 $btn-ghost-active-color-dark: lighten($btn-ghost-hover-color-dark, 5%);
 
+$dropdown-box-shadow: 0 0 4px $shadow-color1;
+$dropdown-min-width: 15rem;
+$dropdown-border-radius: 0.3rem;
+
 $navbar-color: $primary-100;
 
 :root {

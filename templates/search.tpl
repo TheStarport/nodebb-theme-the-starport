@@ -5,7 +5,7 @@
 			<form action="{config.relative-path}/search" method="get" class="nav sticky-md-top d-flex flex-row flex-md-column flex-wrap gap-3 pe-md-3" style="top: 1rem; z-index: 1;">
 				<h2 class="fw-semibold tracking-tight mb-0">[[global:search]]</h2>
 
-				<input id="search-input" name="term" type="text" class="form-control fw-semibold py-2 ps-2 pe-3" id="search-input" placeholder="[[search:type_tosearch]]">
+				<input id="search-input" name="term" type="text" class="form-control fw-semibold py-2 ps-2 pe-3" id="search-input" placeholder="[[search:type-tosearch]]">
 
 				<select id="search-in" name="in" class="form-select text-sm py-2 ps-2 pe-3">
 					<option value="titlesposts">[[search:in-titles-posts]]</option>

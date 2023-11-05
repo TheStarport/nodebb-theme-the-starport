@@ -8,7 +8,7 @@
 	</span>
 	<span component="notifications/count" class="visible-open badge rounded-1 bg-primary {{{ if !unreadCount.notification }}}hidden{{{ end }}}">{unreadCount.notification}</span>
 </a>
-<ul class="notifications-dropdown dropdown-menu p-1 shadow">
+<ul class="navbar-dropdown notifications-dropdown dropdown-menu shadow">
 	<li>
 		<div component="notifications/list" class="list-container notification-list overscroll-behavior-contain pe-1 ff-base">
 			<div class="mb-2 p-1">

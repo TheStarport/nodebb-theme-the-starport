@@ -20,6 +20,6 @@
 	{{{ end }}}
 {{{ else }}}
 	{{{ if !privileges.topics:reply }}}
-	<a component="topic/reply/guest" href="{config.relative_path}/login" class="d-flex align-items-center fw-semibold btn btn-sm btn-primary">[[topic:guest_login_reply]]</a>
+	<a component="topic/reply/guest" href="{config.relative_path}/login" class="d-flex align-items-center fw-semibold btn btn-sm btn-primary">[[topic:guest-login-reply]]</a>
 	{{{ end }}}
 {{{ end }}}

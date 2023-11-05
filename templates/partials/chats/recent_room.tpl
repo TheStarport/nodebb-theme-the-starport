@@ -33,11 +33,6 @@
 				</div>
 
 				{{{ if ./teaser }}}
-				<div class="teaser-content text-sm line-clamp-3 text-break">
-					<span href="#" class="text-decoration-none">{buildAvatar(./teaser.user, "14px", true)}</span>
-					<strong class="text-xs fw-semibold teaser-username">{./teaser.user.username}:</strong>
-					{./teaser.content}
-				</div>
 				<div class="teaser-timestamp text-muted text-xs">{{{ if ./teaser.timeagoLong }}}{./teaser.timeagoLong}{{{ else }}}<span class="timeago" title="{./teaser.timestampISO}"></span>{{{ end }}}</div>
 				{{{ end }}}
 			</div>
