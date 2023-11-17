@@ -1,12 +1,12 @@
 <div component="flags/filters" class="d-flex flex-wrap gap-2 pb-3 border-bottom">
 	<div class="btn-group bottom-sheet">
 		<a class="filter-btn btn btn-light btn-sm border {{{ if filters.quick }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">{{{ if filters.quick }}}[[flags:filter_quick_{./filters.quick}]]{{{ else }}}[[flags:quick_filters]]{{{ end }}}</span>
+			<span class="filter-label">{{{ if filters.quick }}}[[flags:filter-quick_{./filters.quick}]]{{{ else }}}[[flags:quick-filters]]{{{ end }}}</span>
 			<span class="caret"></span>
 		</a>
 		<ul class="dropdown-menu p-1 text-sm">
 			<li>
-				<a class="dropdown-item rounded-1" href="{config.relative_path}/flags?quick=mine">[[flags:filter_quick_mine]]</a>
+				<a class="dropdown-item rounded-1" href="{config.relative_path}/flags?quick=mine">[[flags:filter-quick-mine]]</a>
 			</li>
 		</ul>
 	</div>
@@ -66,32 +66,32 @@
 
 	<div class="btn-group bottom-sheet">
 		<a class="filter-btn btn btn-light btn-sm border {{{ if filters.state }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">{{{ if filters.state }}}[[flags:state_{./filters.state}]]{{{ else }}}[[flags:filter_state]]{{{ end }}}</span>
+			<span class="filter-label">{{{ if filters.state }}}[[flags:state-{./filters.state}]]{{{ else }}}[[flags:filter-state]]{{{ end }}}</span>
 			<span class="caret"></span>
 		</a>
 		<ul class="dropdown-menu p-1 text-sm">
-			<li class="dropdown-item rounded-1" data-name="state" data-value="open">[[flags:state_open]]</li>
-			<li class="dropdown-item rounded-1" data-name="state" data-value="wip">[[flags:state_wip]]</li>
-			<li class="dropdown-item rounded-1" data-name="state" data-value="resolved">[[flags:state_resolved]]</li>
-			<li class="dropdown-item rounded-1" data-name="state" data-value="rejected">[[flags:state_rejected]]</li>
+			<li class="dropdown-item rounded-1" data-name="state" data-value="open">[[flags:state-open]]</li>
+			<li class="dropdown-item rounded-1" data-name="state" data-value="wip">[[flags:state-wip]]</li>
+			<li class="dropdown-item rounded-1" data-name="state" data-value="resolved">[[flags:state-resolved]]</li>
+			<li class="dropdown-item rounded-1" data-name="state" data-value="rejected">[[flags:state-rejected]]</li>
 		</ul>
 	</div>
 
 	<div class="btn-group bottom-sheet">
 		<a class="filter-btn btn btn-light btn-sm border {{{ if filters.type }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">{{{ if filters.type }}}[[flags:filter_type_{./filters.type}]]{{{ else }}}[[flags:filter_type]]{{{ end }}}</span>
+			<span class="filter-label">{{{ if filters.type }}}[[flags:filter-type-{./filters.type}]]{{{ else }}}[[flags:filter-type]]{{{ end }}}</span>
 			<span class="caret"></span>
 		</a>
 		<ul class="dropdown-menu p-1 text-sm">
-			<li class="dropdown-item rounded-1" data-name="type" data-value="all">[[flags:filter_type_all]]</li>
-			<li class="dropdown-item rounded-1" data-name="type" data-value="post">[[flags:filter_type_post]]</li>
-			<li class="dropdown-item rounded-1" data-name="type" data-value="user">[[flags:filter_type_user]]</li>
+			<li class="dropdown-item rounded-1" data-name="type" data-value="all">[[flags:filter-type-all]]</li>
+			<li class="dropdown-item rounded-1" data-name="type" data-value="post">[[flags:filter-type-post]]</li>
+			<li class="dropdown-item rounded-1" data-name="type" data-value="user">[[flags:filter-type-user]]</li>
 		</ul>
 	</div>
 
 	<div component="flags/filter/assignee" class="dropdown bottom-sheet" data-filter-name="assignee">
 		<a component="user/filter/button" class="filter-btn btn btn-light btn-sm border {{{ if filters.assignee }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">[[flags:filter_assignee]]</span>
+			<span class="filter-label">[[flags:filter-assignee]]</span>
 			<span class="caret"></span>
 		</a>
 
@@ -118,7 +118,7 @@
 
 	<div component="flags/filter/reporterId" class="dropdown bottom-sheet" data-filter-name="reporterId">
 		<a component="user/filter/button" class="filter-btn btn btn-light btn-sm border {{{ if filters.reporterId }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">[[flags:filter_reporterId]]</span>
+			<span class="filter-label">[[flags:filter-reporterId]]</span>
 			<span class="caret"></span>
 		</a>
 
@@ -145,7 +145,7 @@
 
 	<div component="flags/filter/targetUid" class="dropdown bottom-sheet" data-filter-name="targetUid">
 		<a component="user/filter/button" class="filter-btn btn btn-light btn-sm border {{{ if filters.targetUid }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">[[flags:filter_targetUid]]</span>
+			<span class="filter-label">[[flags:filter-targetUid]]</span>
 			<span class="caret"></span>
 		</a>
 
@@ -172,7 +172,7 @@
 
 	<div component="flags/filters/reset" class="ms-auto">
 		<a class="filter-btn btn btn-warning btn-sm border {{{ if !hasFilter }}}btn-light disabled{{{ end }}}" href="{config.relative_path}/flags" role="button">
-			<span class="filter-label">[[flags:filter_reset]]</span>
+			<span class="filter-label">[[flags:filter-reset]]</span>
 		</a>
 	</div>
 

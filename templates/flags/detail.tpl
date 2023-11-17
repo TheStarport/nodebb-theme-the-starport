@@ -57,10 +57,10 @@
 			<div>
 				<label class="text-muted fw-semibold" for="state">[[flags:state]]</label>
 				<select class="form-select form-select-sm" id="state" name="state" disabled>
-					<option value="open">[[flags:state_open]]</option>
-					<option value="wip">[[flags:state_wip]]</option>
-					<option value="resolved">[[flags:state_resolved]]</option>
-					<option value="rejected">[[flags:state_rejected]]</option>
+					<option value="open">[[flags:state-open]]</option>
+					<option value="wip">[[flags:state-wip]]</option>
+					<option value="resolved">[[flags:state-resolved]]</option>
+					<option value="rejected">[[flags:state-rejected]]</option>
 				</select>
 			</div>
 			<div>
