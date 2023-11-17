@@ -27,7 +27,7 @@
 							<div class="d-flex justify-content-between align-items-center">
 								<label for="password">[[user:password]]</label>
 								{{{ if allowPasswordReset }}}
-								<a id="reset-link" tabindex="-1" class="text-sm text-decoration-underline" href="{config.relative_path}/reset">[[login:forgot_password]]</a>
+								<a id="reset-link" tabindex="-1" class="text-sm text-decoration-underline" href="{config.relative_path}/reset">[[login:forgot-password]]</a>
 								{{{ end }}}
 							</div>
 							<div>
@@ -40,7 +40,7 @@
 						<div class="mb-2">
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="remember" id="remember" checked /> [[login:remember_me]]
+									<input type="checkbox" name="remember" id="remember" checked /> [[login:-me]]
 								</label>
 							</div>
 						</div>
@@ -59,7 +59,7 @@
 						<hr/>
 
 						{{{ if allowRegistration }}}
-						<span class="text-sm">[[login:dont_have_account]]</span>
+						<span class="text-sm">[[login:dont-have-account]]</span>
 						<a class="btn btn-outline-light text-body" href="{config.relative_path}/register">[[register:register]]</a>
 						{{{ end }}}
 					</form>

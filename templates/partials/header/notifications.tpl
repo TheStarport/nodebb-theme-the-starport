@@ -12,8 +12,8 @@
     <li class="notif-dropdown-link">
         <hr class="my-1"/>
         <div class="d-flex flex-column justify-content-center">
-            <a role="button" href="#" class="text-center"><i class="fa fa-check-double"></i> [[notifications:mark_all_read]]</a>
-            <a class="text-center" href="{relative_path}/notifications"><i class="fa fa-list"></i> [[notifications:see_all]]</a>
+            <a role="button" href="#" class="text-center"><i class="fa fa-check-double"></i> [[notifications:mark-all-read]]</a>
+            <a class="text-center" href="{relative_path}/notifications"><i class="fa fa-list"></i> [[notifications:see-all]]</a>
         </div>
     </li>
 </ul>

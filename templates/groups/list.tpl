@@ -8,11 +8,11 @@
 	<div class="d-flex flex-wrap justify-content-between">
 		<div class="mb-2 mb-md-0">
 			<div class="text-sm d-flex flex-wrap align-items-center gap-2">
-				[[topic:sort_by]]
+				[[topic:sort-by]]
 				<div class="d-flex gap-2">
-					<a href="?sort=alpha" class="btn-ghost fw-semibold {{{ if (sort == "alpha") }}}active{{{ end }}}">[[groups:details.group_name]]</a>
-					<a href="?sort=count" class="btn-ghost fw-semibold {{{ if (sort == "count") }}}active{{{ end }}}">[[groups:details.member_count]]</a>
-					<a href="?sort=date" class="btn-ghost fw-semibold {{{ if (sort == "date") }}}active{{{ end }}}">[[groups:details.creation_date]]</a>
+					<a href="?sort=alpha" class="btn-ghost fw-semibold {{{ if (sort == "alpha") }}}active{{{ end }}}">[[groups:details.group-name]]</a>
+					<a href="?sort=count" class="btn-ghost fw-semibold {{{ if (sort == "count") }}}active{{{ end }}}">[[groups:details.member-count]]</a>
+					<a href="?sort=date" class="btn-ghost fw-semibold {{{ if (sort == "date") }}}active{{{ end }}}">[[groups:details.creation-date]]</a>
 				</div>
 			</div>
 		</div>
@@ -23,9 +23,9 @@
 					<button class="btn btn-primary btn-sm text-nowrap" data-action="new"><i class="fa fa-users"></i> [[groups:new_group]]</button>
 					{{{ end }}}
 					<select class="form-select hidden" id="search-sort">
-						<option value="alpha">[[groups:details.group_name]]</option>
-						<option value="count">[[groups:details.member_count]]</option>
-						<option value="date">[[groups:details.creation_date]]</option>
+						<option value="alpha">[[groups:details.group-name]]</option>
+						<option value="count">[[groups:details.member-count]]</option>
+						<option value="date">[[groups:details.creation-date]]</option>
 					</select>
 				</div>
 				<div class="">
