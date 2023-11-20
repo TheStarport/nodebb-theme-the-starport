@@ -33,14 +33,14 @@
 							<div>
 								<input class="form-control" type="password" placeholder="[[user:password]]" name="password" id="password" {{{ if username }}}autocomplete="off"{{{ end }}}/>
 								<p id="caps-lock-warning" class="text-danger hidden">
-									<i class="fa fa-exclamation-triangle"></i> [[login:caps_lock_enabled]]
+									<i class="fa fa-exclamation-triangle"></i> [[login:caps-lock-enabled]]
 								</p>
 							</div>
 						</div>
 						<div class="mb-2">
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="remember" id="remember" checked /> [[login:remember_me]]
+									<input type="checkbox" name="remember" id="remember" checked /> [[login:remember-me]]
 								</label>
 							</div>
 						</div>
@@ -59,7 +59,7 @@
 						<hr/>
 
 						{{{ if allowRegistration }}}
-						<span class="text-sm">[[login:dont_have_account]]</span>
+						<span class="text-sm">[[login:dont-have-account]]</span>
 						<a class="btn btn-outline-light text-body" href="{config.relative_path}/register">[[register:register]]</a>
 						{{{ end }}}
 					</form>
