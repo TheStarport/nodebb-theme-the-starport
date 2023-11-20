@@ -64,7 +64,7 @@
         {{{ if registrationQueueEnabled }}}
         <li>
             <a class="dropdown-item" href="{relative_path}/registration-queue">
-                <i class="fa fa-fw fa-list-alt"></i> <span>[[pages:registration_queue]]</span>
+                <i class="fa fa-fw fa-list-alt"></i> <span>[[pages:registration-queue]]</span>
             </a>
         </li>
         {{{ end }}}

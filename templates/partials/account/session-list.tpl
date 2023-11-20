@@ -3,7 +3,7 @@
 	<div class="float-end">
 		{{{ if isSelfOrAdminOrGlobalModerator }}}
 		{{{ if !./current }}}
-		<button class="btn btn-sm btn-outline-secondary" type="button" data-action="revokeSession">[[user:revoke_session]]</button>
+		<button class="btn btn-sm btn-outline-secondary" type="button" data-action="revokeSession">[[user:revoke-session]]</button>
 		{{{ end }}}
 		{{{ end }}}
 		{function.userAgentIcons}

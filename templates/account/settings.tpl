@@ -51,13 +51,13 @@
 			{{{ if !hideFullname }}}
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="showfullname" {{{ if settings.showfullname }}}checked{{{ end }}}/>
-				<label class="form-check-label text-sm">[[user:show_fullname]]</label>
+				<label class="form-check-label text-sm">[[user:show-fullname]]</label>
 			</div>
 			{{{ end }}}
 			{{{ if !config.disableChat }}}
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="restrictChat" {{{ if settings.restrictChat }}}checked{{{ end }}}/>
-				<label class="form-check-label text-sm">[[user:restrict_chats]]</label>
+				<label class="form-check-label text-sm">[[user:restrict-chats]]</label>
 			</div>
 			{{{ end }}}
 		</div>
@@ -99,7 +99,7 @@
 				<input type="text" class="form-control form-control-sm" data-property="topicsPerPage" value="{settings.topicsPerPage}">
 			</div>
 			<div class="">
-				<label class="form-label">[[user:posts_per_page]] ([[user:max-items-per-page, {maxPostsPerPage}]])</label>
+				<label class="form-label">[[user:posts-per-page]] ([[user:max-items-per-page, {maxPostsPerPage}]])</label>
 				<input type="text" class="form-control form-control-sm" data-property="postsPerPage" value="{settings.postsPerPage}">
 			</div>
 		</div>
@@ -111,7 +111,7 @@
 			<div class="mb-2">
 				<label class="form-label">[[user:category-topic-sort]]</label>
 				<select class="form-select form-select-sm" data-property="categoryTopicSort">
-					<option value="newest_to_oldest" {{{ if (settings.categoryTopicSort == "newest_to_oldest") }}}selected{{{ end }}}>[[topic:newestto-oldest]]</option>
+					<option value="newest_to_oldest" {{{ if (settings.categoryTopicSort == "newest_to_oldest") }}}selected{{{ end }}}>[[topic:newest-to-oldest]]</option>
 					<option value="oldest_to_newest" {{{ if (settings.categoryTopicSort == "oldest_to_newest") }}}selected{{{ end }}}>[[topic:oldest-to-newest]]</option>
 					<option value="most_posts" {{{ if (settings.categoryTopicSort == "most_posts") }}}selected{{{ end }}}>[[topic:most-posts]]</option>
 					<option value="most_votes" {{{ if (settings.categoryTopicSort == "most_votes") }}}selected{{{ end }}}>[[topic:most-votes]]</option>
@@ -166,7 +166,7 @@
 		</div>
 		<hr/>
 		{{{ if (isAdmin && isSelf) }}}
-		<h6 class="fw-bold">[[user:acp_language]]</h6>
+		<h6 class="fw-bold">[[user:acp-language]]</h6>
 		<div class="">
 			<select data-property="acpLang" class="form-select form-select-sm">
 				{{{each acpLanguages}}}

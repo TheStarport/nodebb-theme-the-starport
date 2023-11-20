@@ -11,7 +11,7 @@
 			<div class="col-12 col-md-5 col-lg-3 px-md-0">
 				<div class="register-block">
 					<div class="alert alert-danger{{{ if !error }}} hidden{{{ end }}}" id="register-error-notify" >
-						<strong>[[error:registration_error]]</strong>
+						<strong>[[error:registration-error]]</strong>
 						<p>{error}</p>
 					</div>
 
