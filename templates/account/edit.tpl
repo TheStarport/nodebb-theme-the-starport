@@ -32,7 +32,7 @@
 				<label class="form-label fw-bold" for="groupTitle">[[user:grouptitle]]</label>
 
 				<select class="form-select mb-1" id="groupTitle" name="groupTitle" {{{ if allowMultipleBadges }}} size="{groupSelectSize}" multiple{{{ end }}}>
-					<option value="">[[user:no_group_title]]</option>
+					<option value="">[[user:no-group-title]]</option>
 					{{{ each groups }}}
 					{{{ if ./userTitleEnabled }}}
 					<option value="{groups.displayName}" {{{ if ./selected }}}selected{{{ end }}}>{./userTitle}</option>
@@ -41,7 +41,7 @@
 				</select>
 				{{{ if allowMultipleBadges }}}
 				<div class="d-none d-md-block">
-					<span class="form-text">[[user:group_order_help]]</span>
+					<span class="form-text">[[user:group-order-help]]</span>
 					<i role="button" component="group/order/up" class="fa fa-chevron-up"></i> <i role="button" component="group/order/down" class="fa fa-chevron-down"></i>
 				</div>
 				{{{ end }}}
@@ -68,16 +68,16 @@
 		<div class="text-center">
 			<ul class="list-group mb-3 text-sm text-nowrap">
 				{{{ if allowProfilePicture }}}
-				<a component="profile/change/picture" href="#" class="list-group-item px-1 text-decoration-none">[[user:change_picture]]</a>
+				<a component="profile/change/picture" href="#" class="list-group-item px-1 text-decoration-none">[[user:change-picture]]</a>
 				{{{ end }}}
 				{{{ if !username:disableEdit }}}
-				<a href="{config.relative_path}/user/{userslug}/edit/username" class="list-group-item px-1 text-decoration-none">[[user:change_username]]</a>
+				<a href="{config.relative_path}/user/{userslug}/edit/username" class="list-group-item px-1 text-decoration-none">[[user:change-username]]</a>
 				{{{ end }}}
 				{{{ if !email:disableEdit }}}
-				<a href="{config.relative_path}/user/{userslug}/edit/email" class="list-group-item px-1 text-decoration-none">[[user:change_email]]</a>
+				<a href="{config.relative_path}/user/{userslug}/edit/email" class="list-group-item px-1 text-decoration-none">[[user:change-email]]</a>
 				{{{ end }}}
 				{{{ if canChangePassword }}}
-				<a href="{config.relative_path}/user/{userslug}/edit/password" class="list-group-item px-1 text-decoration-none">[[user:change_password]]</a>
+				<a href="{config.relative_path}/user/{userslug}/edit/password" class="list-group-item px-1 text-decoration-none">[[user:change-password]]</a>
 				{{{ end }}}
 				{{{ each editButtons }}}
 				<a href="{config.relative_path}{./link}" class="list-group-item px-1 text-decoration-none">{./text}</a>
@@ -112,7 +112,7 @@
 		<hr/>
 		{{{ if (allowAccountDelete && isSelf) }}}
 		<div class="d-flex justify-content-center">
-			<button id="deleteAccountBtn" class="btn btn-danger">[[user:delete_account]]</button>
+			<button id="deleteAccountBtn" class="btn btn-danger">[[user:delete-account]]</button>
 		</div>
 		{{{ end }}}
 	</div>

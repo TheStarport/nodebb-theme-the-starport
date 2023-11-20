@@ -85,7 +85,7 @@
 
 		<div class="card mb-3">
 			<h5 class="card-header">
-				[[user:info.ban_history]]
+				[[user:info.ban-history]]
 
 				{{{ if (!banned && !isSelf) }}}
 				<button class="btn btn-sm float-end btn-danger" component="account/ban">[[user:ban_account]]</button>
@@ -123,7 +123,7 @@
 
 		<div class="card mb-3">
 			<h5 class="card-header">
-				[[user:info.mute_history]]
+				[[user:info.mute-history]]
 
 				{{{ if !muted }}}
 				{{{ if !isSelf }}}

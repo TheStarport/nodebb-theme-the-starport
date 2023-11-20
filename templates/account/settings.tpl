@@ -28,12 +28,12 @@
 					<option value="{./route}" {{{ if ./selected }}}selected="1"{{{ end }}}>{./name}</option>
 					{{{ end }}}
 				</select>
-				<p class="form-text text-xs">[[user:homepage_description]]</p>
+				<p class="form-text text-xs">[[user:homepage-description]]</p>
 			</div>
 			<div id="homePageCustom" class="mb-2" style="display: none;">
-				<label class="form-label" for="homePageCustom">[[user:custom_route]]</label>
+				<label class="form-label" for="homePageCustom">[[user:custom-route]]</label>
 				<input type="text" class="form-control form-control-sm" data-property="homePageCustom" id="homePageCustom" value="{settings.homePageRoute}"/>
-				<p class="form-text text-xs">[[user:custom_route_help]]</p>
+				<p class="form-text text-xs">[[user:custom-route-help]]</p>
 			</div>
 		</div>
 		<hr/>
@@ -67,23 +67,23 @@
 		<div class="">
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="openOutgoingLinksInNewTab" {{{ if settings.openOutgoingLinksInNewTab }}}checked{{{ end }}}/>
-				<label class="form-check-label">[[user:open_links_in_new_tab]]</label>
+				<label class="form-check-label">[[user:open-links-in-new-tab]]</label>
 			</div>
 			{{{ if inTopicSearchAvailable }}}
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="topicSearchEnabled" {{{ if settings.topicSearchEnabled }}}checked{{{ end }}}/>
-				<label class="form-check-label">[[user:enable_topic_searching]]</label>
+				<label class="form-check-label">[[user:enable-topic-searching]]</label>
 			</div>
-			<p class="form-text text-xs">[[user:topic_search_help]]</p>
+			<p class="form-text text-xs">[[user:topic-search-help]]</p>
 			{{{ end }}}
 
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="updateUrlWithPostIndex" {{{ if settings.updateUrlWithPostIndex }}}checked{{{ end }}}/>
-				<label class="form-check-label">[[user:update_url_with_post_index]]</label>
+				<label class="form-check-label">[[user:update-url-with-post-index]]</label>
 			</div>
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="scrollToMyPost" {{{ if settings.scrollToMyPost }}}checked{{{ end }}}/>
-				<label class="form-check-label">[[user:scroll_to_my_post]]</label>
+				<label class="form-check-label">[[user:scroll-to-my-post]]</label>
 			</div>
 		</div>
 		<hr/>
@@ -92,14 +92,14 @@
 		<div class="">
 			<div class="mb-2 form-check">
 				<input type="checkbox" class="form-check-input" data-property="usePagination" {{{ if settings.usePagination }}}checked{{{ end }}}>
-				<label class="form-check-label">[[user:paginate_description]]</label>
+				<label class="form-check-label">[[user:paginate-description]]</label>
 			</div>
 			<div class="mb-2">
-				<label class="form-label">[[user:topics_per_page]] ([[user:max_items_per_page, {maxTopicsPerPage}]])</label>
+				<label class="form-label">[[user:topics-per-page]] ([[user:max-items-per-page, {maxTopicsPerPage}]])</label>
 				<input type="text" class="form-control form-control-sm" data-property="topicsPerPage" value="{settings.topicsPerPage}">
 			</div>
 			<div class="">
-				<label class="form-label">[[user:posts_per_page]] ([[user:max_items_per_page, {maxPostsPerPage}]])</label>
+				<label class="form-label">[[user:posts_per_page]] ([[user:max-items-per-page, {maxPostsPerPage}]])</label>
 				<input type="text" class="form-control form-control-sm" data-property="postsPerPage" value="{settings.postsPerPage}">
 			</div>
 		</div>
@@ -112,18 +112,18 @@
 				<label class="form-label">[[user:category-topic-sort]]</label>
 				<select class="form-select form-select-sm" data-property="categoryTopicSort">
 					<option value="newest_to_oldest" {{{ if (settings.categoryTopicSort == "newest_to_oldest") }}}selected{{{ end }}}>[[topic:newestto-oldest]]</option>
-					<option value="oldest_to_newest" {{{ if (settings.categoryTopicSort == "oldest_to_newest") }}}selected{{{ end }}}>[[topic:oldest_to_newest]]</option>
-					<option value="most_posts" {{{ if (settings.categoryTopicSort == "most_posts") }}}selected{{{ end }}}>[[topic:most_posts]]</option>
-					<option value="most_votes" {{{ if (settings.categoryTopicSort == "most_votes") }}}selected{{{ end }}}>[[topic:most_votes]]</option>
-					<option value="most_views" {{{ if (settings.categoryTopicSort == "most_views") }}}selected{{{ end }}}>[[topic:most_views]]</option>
+					<option value="oldest_to_newest" {{{ if (settings.categoryTopicSort == "oldest_to_newest") }}}selected{{{ end }}}>[[topic:oldest-to-newest]]</option>
+					<option value="most_posts" {{{ if (settings.categoryTopicSort == "most_posts") }}}selected{{{ end }}}>[[topic:most-posts]]</option>
+					<option value="most_votes" {{{ if (settings.categoryTopicSort == "most_votes") }}}selected{{{ end }}}>[[topic:most-votes]]</option>
+					<option value="most_views" {{{ if (settings.categoryTopicSort == "most_views") }}}selected{{{ end }}}>[[topic:most-views]]</option>
 				</select>
 			</div>
 			<div class="">
 				<label class="form-label">[[user:topic-post-sort]]</label>
 				<select class="form-select form-select-sm" data-property="topicPostSort">
-					<option value="oldest_to_newest" {{{ if (settings.topicPostSort == "oldest_to_newest") }}}selected{{{ end }}}>[[topic:oldest_to_newest]]</option>
+					<option value="oldest_to_newest" {{{ if (settings.topicPostSort == "oldest_to_newest") }}}selected{{{ end }}}>[[topic:oldest-to-newest]]</option>
 					<option value="newest_to_oldest" {{{ if (settings.topicPostSort == "newest_to_oldest") }}}selected{{{ end }}}>[[topic:newest_to_oldest]]</option>
-					<option value="most_votes" {{{ if (settings.topicPostSort == "most_votes") }}}selected{{{ end }}}>[[topic:most_votes]]</option>
+					<option value="most_votes" {{{ if (settings.topicPostSort == "most_votes") }}}selected{{{ end }}}>[[topic:most-votes]]</option>
 				</select>
 			</div>
 		</div>
@@ -181,11 +181,11 @@
 		<div class="">
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="followTopicsOnCreate" {{{ if settings.followTopicsOnCreate }}}checked{{{ end }}}/>
-				<label class="form-check-label">[[user:follow_topics_you_create]]</label>
+				<label class="form-check-label">[[user:follow-topics-you-create]]</label>
 			</div>
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="followTopicsOnReply" {{{ if settings.followTopicsOnReply }}}checked{{{ end }}}/>
-					<label class="form-check-label">[[user:follow_topics_you_reply_to]]</label>
+					<label class="form-check-label">[[user:follow-topics-you-reply-to]]</label>
 			</div>
 			<div class="mb-2">
 				<label class="form-label">[[user:default-category-watch-state]]</label>
@@ -208,9 +208,9 @@
 				<div class="mb-2 col-5">
 					<select class="form-select form-select-sm" data-property="{./name}">
 						<option value="none" {{{ if ./none }}}selected{{{ end }}}>[[notifications:none]]</option>
-						<option value="notification" {{{ if ./notification }}}selected{{{ end }}}>[[notifications:notification_only]]</option>
-						<option value="email" {{{ if ./email }}}selected{{{ end }}}>[[notifications:email_only]]</option>
-						<option value="notificationemail" {{{ if ./notificationemail }}}selected{{{ end }}}>[[notifications:notification_and_email]]</option>
+						<option value="notification" {{{ if ./notification }}}selected{{{ end }}}>[[notifications:notification-only]]</option>
+						<option value="email" {{{ if ./email }}}selected{{{ end }}}>[[notifications:email-only]]</option>
+						<option value="notificationemail" {{{ if ./notificationemail }}}selected{{{ end }}}>[[notifications:notification-and-email]]</option>
 					</select>
 				</div>
 			</div>

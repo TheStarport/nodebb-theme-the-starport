@@ -20,7 +20,7 @@
 				<span class="visible-md-inline visible-lg-inline">{selectedCategory.name}</span>
 			</span>
 			{{{ else }}}
-			<span class="visible-md-inline visible-lg-inline">[[unread:all_categories]]</span>
+			<span class="visible-md-inline visible-lg-inline">[[unread:all-categories]]</span>
 			{{{ end }}}
 			<span class="caret"></span>
 		</button>
@@ -97,7 +97,7 @@
 
 		<ul class="dropdown-menu p-1 text-sm" style="min-width: 350px;">
 			<li class="px-3 py-1 d-flex flex-column gap-2">
-				<input type="text" class="form-control" component="user/filter/search" placeholder="[[search:type_a_username]]">
+				<input type="text" class="form-control" component="user/filter/search" placeholder="[[search:type-a-username]]">
 				<div component="user/filter/selected" class="d-flex flex-wrap gap-2">
 					{{{ each selected.assignee }}}
 					<div class="d-flex px-2 py-1 rounded-1 text-bg-primary gap-2 align-items-center text-sm">
@@ -124,7 +124,7 @@
 
 		<ul class="dropdown-menu p-1 text-sm" style="min-width: 350px;">
 			<li class="px-3 py-1 d-flex flex-column gap-2">
-				<input type="text" class="form-control" component="user/filter/search" placeholder="[[search:type_a_username]]">
+				<input type="text" class="form-control" component="user/filter/search" placeholder="[[search:type-a-username]]">
 				<div component="user/filter/selected" class="d-flex flex-wrap gap-2">
 					{{{ each selected.reporterId }}}
 					<div class="d-flex px-2 py-1 rounded-1 text-bg-primary gap-2 align-items-center text-sm">
@@ -151,7 +151,7 @@
 
 		<ul class="dropdown-menu p-1 text-sm" style="min-width: 350px;">
 			<li class="px-3 py-1 d-flex flex-column">
-				<input type="text" class="form-control" component="user/filter/search" placeholder="[[search:type_a_username]]">
+				<input type="text" class="form-control" component="user/filter/search" placeholder="[[search:type-a-username]]">
 				<div component="user/filter/selected" class="d-flex flex-wrap gap-2">
 					{{{ each selected.targetUid }}}
 					<div class="d-flex px-2 py-1 rounded-1 text-bg-primary gap-2 align-items-center text-sm">

@@ -9,10 +9,10 @@
 		{function.userAgentIcons}
 		<i class="fa fa-circle text-{{{ if ./current }}}success{{{ else }}}muted{{{ end }}}"></i>
 	</div>
-	[[user:browser_version_on_platform, {./browser}, {./version}, {./platform}]]<br />
+	[[user:browser-version-on-platform, {./browser}, {./version}, {./platform}]]<br />
 	<small class="timeago text-muted" title="{../datetimeISO}"></small>
 	<ul>
-		<li><strong>[[global:ip_address]]</strong>: {../ip}</li>
+		<li><strong>[[global:ip-address]]</strong>: {../ip}</li>
 	</ul>
 </li>
 {{{ end }}}

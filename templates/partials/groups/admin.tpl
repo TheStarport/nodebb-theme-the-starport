@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-6">
 				<div class="mb-3">
-					<label class="form-label" for="name">[[groups:details.group_name]]</label>
+					<label class="form-label" for="name">[[groups:details.group-name]]</label>
 					<input {{{ if group.system }}}readonly{{{ end }}} class="form-control" name="name" id="name" type="text" value="{group.displayName}" />
 				</div>
 				<div class="mb-3">

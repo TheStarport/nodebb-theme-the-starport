@@ -1,6 +1,6 @@
 <!-- IMPORT partials/account/header.tpl -->
 
-<h3 class="fw-semibold fs-5">{{{ if isSelf }}}[[user:change_password]]{{{ else }}}[[pages:{template.name}, {username}]]{{{ end }}}</h3>
+<h3 class="fw-semibold fs-5">{{{ if isSelf }}}[[user:change-password]]{{{ else }}}[[pages:{template.name}, {username}]]{{{ end }}}</h3>
 <div class="row">
 	<div class="col-12 col-lg-4">
 		<form class="edit-form">
@@ -26,7 +26,7 @@
 			</div>
 
 			<div class="form-actions">
-				<button id="changePasswordBtn" class="btn btn-primary btn-block"><i class="hide fa fa-spinner fa-spin"></i> [[user:change_password]]</button>
+				<button id="changePasswordBtn" class="btn btn-primary btn-block"><i class="hide fa fa-spinner fa-spin"></i> [[user:change-password]]</button>
 			</div>
 		</form>
 	</div>
