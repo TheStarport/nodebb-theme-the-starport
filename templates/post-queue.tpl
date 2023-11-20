@@ -5,7 +5,7 @@
 	{{{ if (!singlePost && posts.length) }}}
 	<div class="btn-group bottom-sheet" component="post-queue/bulk-actions">
 		<button type="button" class="btn-ghost-sm dropdown-toggle" data-bs-toggle="dropdown" autocomplete="off" aria-haspopup="true" aria-expanded="false">
-			<i class="fa fa-clone"></i><span class="fw-semibold"> [[post-queue:bulk-actions]]</span>
+			<i class="fa fa-clone"></i><span class="fw-semibold"> [[post-queue:bulk_actions]]</span>
 		</button>
 		<ul class="dropdown-menu p-1 text-sm dropdown-menu-end">
 			{{{ if canAccept }}}

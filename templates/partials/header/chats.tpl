@@ -12,8 +12,8 @@
     <li class="notif-dropdown-link">
         <hr class="my-1"/>
         <div class="btn-group d-flex flex-column justify-content-center">
-            <a class="text-center" href="#" component="chats/mark-all-read"><i class="fa fa-check-double"></i> [[modules:chat.mark-all-read]]</a>
-            <a class="text-center" href="{relative_path}/user/{user.userslug}/chats"><i class="fa fa-comments"></i> [[modules:chat.see-all]]</a>
+            <a class="text-center" href="#" component="chats/mark-all-read"><i class="fa fa-check-double"></i> [[modules:chat.mark_all_read]]</a>
+            <a class="text-center" href="{relative_path}/user/{user.userslug}/chats"><i class="fa fa-comments"></i> [[modules:chat.see_all]]</a>
         </div>
     </li>
 </ul>
