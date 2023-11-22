@@ -3,11 +3,11 @@
 <h3 class="fw-semibold fs-5">{title}</h3>
 
 <div class="alert alert-info text-center">
-	{{{ if privateUploads }}}[[uploads:pr_fo]]{{{ else }}}[[uploads:public_uploads_info]]{{{ end }}}
+	{{{ if privateUploads }}}[[uploads:pr-fo]]{{{ else }}}[[uploads:public-uploads-info]]{{{ end }}}
 </div>
 
 {{{ if !uploads.length }}}
-<div class="alert alert-warning text-center">[[uploads:no_uploads_found]]</div>
+<div class="alert alert-warning text-center">[[uploads:no-uploads-found]]</div>
 {{{ end }}}
 
 <table class="table table-striped table-responsive">

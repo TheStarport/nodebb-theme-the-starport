@@ -20,7 +20,7 @@
 			<div class="d-flex justify-content-end gap-2">
 				<div class="">
 					{{{ if allowGroupCreation }}}
-					<button class="btn btn-primary btn-sm text-nowrap" data-action="new"><i class="fa fa-users"></i> [[groups:new_group]]</button>
+					<button class="btn btn-primary btn-sm text-nowrap" data-action="new"><i class="fa fa-users"></i> [[groups:new-group]]</button>
 					{{{ end }}}
 					<select class="form-select hidden" id="search-sort">
 						<option value="alpha">[[groups:details.group-name]]</option>
@@ -48,7 +48,7 @@
 		{{{ else }}}
 		<div class="col-12">
 			<div class="alert alert-warning">
-			[[groups:no_groups_found]]
+			[[groups:no-groups-found]]
 			</div>
 		</div>
 		{{{ end }}}

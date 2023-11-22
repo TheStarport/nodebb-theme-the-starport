@@ -88,7 +88,7 @@
 			</div>
 		</div>
 
-		<button class="btn btn-link text-danger float-end" type="button" data-action="delete">[[groups:details.delete_group]]</button>
-		<button class="btn btn-primary" type="button" data-action="update">[[global:save_changes]]</button>
+		<button class="btn btn-link text-danger float-end" type="button" data-action="delete">[[groups:details.delete-group]]</button>
+		<button class="btn btn-primary" type="button" data-action="update">[[global:save-changes]]</button>
 	</form>
 </div>

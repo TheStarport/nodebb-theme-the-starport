@@ -2,7 +2,7 @@
 
 <div class="d-flex justify-content-between py-1 mb-3 align-items-center position-sticky top-0 bg-body">
 	<h3 class="fw-semibold fs-5 mb-0">{{{ if isSelf }}}[[user:edit-profile]]{{{ else }}}[[pages:account/edit, {username}]]{{{ end }}}</h3>
-	<button id="submitBtn" class="btn btn-sm btn-primary">[[global:save_changes]]</button>
+	<button id="submitBtn" class="btn btn-sm btn-primary">[[global:save-changes]]</button>
 </div>
 <div class="row">
 	<div class="col-xl-6 col-12">

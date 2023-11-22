@@ -10,7 +10,7 @@
 </div>
 
 <div class="mb-2 clearfix">
-	<button type="button" class="btn btn-primary btn-sm float-end" component="groups/members/bulk-invite-button">[[groups:bulk_invite]]</button>
+	<button type="button" class="btn btn-primary btn-sm float-end" component="groups/members/bulk-invite-button">[[groups:bulk-invite]]</button>
 </div>
 
 <div style="max-height: 500px; overflow: auto;">

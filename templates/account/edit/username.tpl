@@ -13,8 +13,8 @@
 
 			{{{ if isSelf }}}
 			<div class="mb-2">
-				<label class="form-label fw-semibold text-sm" for="inputCurrentPassword">[[user:current_password]]</label>
-				<input autocomplete="off" class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current_password]]" value=""{{{ if !hasPassword }}} disabled{{{ end }}}>
+				<label class="form-label fw-semibold text-sm" for="inputCurrentPassword">[[user:current-password]]</label>
+				<input autocomplete="off" class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current-password]]" value=""{{{ if !hasPassword }}} disabled{{{ end }}}>
 			</div>
 			{{{ end }}}
 

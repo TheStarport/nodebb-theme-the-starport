@@ -12,7 +12,7 @@
 		</a>
 		</li>
 		<li><a class="dropdown-item rounded-1 d-flex align-items-center gap-2" href="#" class="newest_to_oldest" data-sort="newest_to_oldest">
-			<span class="flex-grow-1">[[topic:newest_to_oldest]]</span>
+			<span class="flex-grow-1">[[topic:newest-to-oldest]]</span>
 			<i class="flex-shrink-0 fa fa-fw"></i>
 		</a>
 		</li>

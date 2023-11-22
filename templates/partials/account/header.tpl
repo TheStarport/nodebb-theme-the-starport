@@ -5,6 +5,7 @@
 		{{{end}}}
 	</div>
 
+    <!--
 	<div class="cover position-absolute start-0 top-0 w-100" component="account/cover" style="background-image: url({cover:url}); background-position: {cover:position};">
 		<div class="container">
 			{{{ if allowCoverPicture }}}
@@ -20,6 +21,7 @@
 			{{{ end }}}
 		</div>
 	</div>
+    -->
 
 	<div class="d-flex flex-column flex-md-row gap-2 w-100 pb-4 mb-4 mt-2 border-bottom">
 		<div {{{ if (allowProfilePicture && isSelfOrAdminOrGlobalModerator)}}}component="profile/change/picture"{{{ end }}} class="avatar-wrapper border border-white border-4 rounded-circle position-relative align-self-center align-self-md-start hover-parent" style="margin-top: -75px;">

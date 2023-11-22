@@ -41,7 +41,7 @@
 
 		{{{ if (!topics.length && privileges.topics:create) }}}
 		<div class="alert alert-info" id="category-no-topics">
-			[[category:no_topics]]
+			[[category:no-topics]]
 		</div>
 		{{{ end }}}
 

@@ -8,20 +8,20 @@
 
 			{{{ if isSelf }}}
 			<div class="mb-2">
-				<label class="form-label fw-semibold text-xm" for="inputCurrentPassword">[[user:current_password]]</label>
-				<input autocomplete="off" class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current_password]]" value="" {{{ if !hasPassword }}} disabled{{{ end }}}>
+				<label class="form-label fw-semibold text-xm" for="inputCurrentPassword">[[user:current-password]]</label>
+				<input autocomplete="off" class="form-control" type="password" id="inputCurrentPassword" placeholder="[[user:current-password]]" value="" {{{ if !hasPassword }}} disabled{{{ end }}}>
 			</div>
 			{{{ end }}}
 
 			<div class="mb-2">
-				<label class="form-label fw-semibold text-xm" for="inputNewPassword">[[user:new_password]]</label>
+				<label class="form-label fw-semibold text-xm" for="inputNewPassword">[[user:new-password]]</label>
 				<input class="form-control" type="password" id="inputNewPassword" placeholder="[[user:password]]" value="">
 				<span class="form-feedback" id="password-notify"></span>
 			</div>
 
 			<div class="mb-2">
-				<label class="form-label fw-semibold text-xm" for="inputNewPasswordAgain">[[user:confirm_password]]</label>
-				<input class="form-control" type="password" id="inputNewPasswordAgain" placeholder="[[user:confirm_password]]" value="">
+				<label class="form-label fw-semibold text-xm" for="inputNewPasswordAgain">[[user:confirm-password]]</label>
+				<input class="form-control" type="password" id="inputNewPasswordAgain" placeholder="[[user:confirm-password]]" value="">
 				<span class="form-feedback" id="password-confirm-notify"></span>
 			</div>
 

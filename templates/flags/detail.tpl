@@ -22,12 +22,12 @@
 					{{{ end }}}
 					<li class="dropdown-divider"></li>
 					{{{ if privileges.ban }}}
-					<li class="{{{ if target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="ban">[[user:ban_account]]</a></li>
-					<li class="{{{ if !target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unban">[[user:unban_account]]</a></li>
+					<li class="{{{ if target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="ban">[[user:ban-account]]</a></li>
+					<li class="{{{ if !target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unban">[[user:unban-account]]</a></li>
 					{{{ end }}}
 					{{{ if privileges.mute}}}
-					<li class="{{{ if target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="mute">[[user:mute_account]]</a></li>
-					<li class="{{{ if !target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unmute">[[user:unmute_account]]</a></li>
+					<li class="{{{ if target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="mute">[[user:mute-account]]</a></li>
+					<li class="{{{ if !target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unmute">[[user:unmute-account]]</a></li>
 					{{{ end }}}
 					{{{ if privileges.admin:users }}}
 					<li><a class="dropdown-item rounded-1" href="#" data-action="delete-account">[[user:delete-account-as-admin]]</a></li>

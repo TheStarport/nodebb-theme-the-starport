@@ -2,7 +2,7 @@
 	<div component="chat/nav-wrapper" class="flex-shrink-0 d-flex flex-column h-100 gap-1" data-loaded="{{{ if roomId }}}1{{{ else }}}0{{{ end }}}">
 
 		<div>
-			<button component="chat/create" class="btn btn-primary btn-sm w-100">[[modules:chat.create_room]]</button>
+			<button component="chat/create" class="btn btn-primary btn-sm w-100">[[modules:chat.create-room]]</button>
 		</div>
 
 		{{{ if publicRooms.length }}}

@@ -9,14 +9,14 @@
 		</button>
 		<ul class="dropdown-menu p-1 text-sm dropdown-menu-end">
 			{{{ if canAccept }}}
-			<li><a class="dropdown-item rounded-1" href="#" data-action="accept-all">[[post-queue:accept_all]]</a></li>
-			<li><a class="dropdown-item rounded-1" href="#" data-action="accept-selected">[[post-queue:accept_selected]]</a></li>
+			<li><a class="dropdown-item rounded-1" href="#" data-action="accept-all">[[post-queue:accept-all]]</a></li>
+			<li><a class="dropdown-item rounded-1" href="#" data-action="accept-selected">[[post-queue:accept-selected]]</a></li>
 			<li class="dropdown-divider"></li>
-			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-all">[[post-queue:reject_all]]</a></li>
-			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-selected">[[post-queue:reject_selected]]</a></li>
+			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-all">[[post-queue:reject-all]]</a></li>
+			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-selected">[[post-queue:reject-selected]]</a></li>
 			{{{ else }}}
-			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-all">[[post-queue:remove_all]]</a></li>
-			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-selected">[[post-queue:remove_selected]]</a></li>
+			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-all">[[post-queue:remove-all]]</a></li>
+			<li><a class="dropdown-item rounded-1" href="#" data-action="reject-selected">[[post-queue:remove-selected]]</a></li>
 			{{{ end }}}
 		</ul>
 	</div>
@@ -64,12 +64,12 @@
 									<li><a class="dropdown-item rounded-1" href="{config.relative_path}/user/{./user.userslug}/info">[[user:account_info]]</a></li>
 									{{{ end }}}
 									{{{ if privileges.ban }}}
-									<li class="{{{ if target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="ban">[[user:ban_account]]</a></li>
-									<li class="{{{ if !target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unban">[[user:unban_account]]</a></li>
+									<li class="{{{ if target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="ban">[[user:ban-account]]</a></li>
+									<li class="{{{ if !target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unban">[[user:unban-account]]</a></li>
 									{{{ end }}}
 									{{{ if privileges.mute}}}
-									<li class="{{{ if target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="mute">[[user:mute_account]]</a></li>
-									<li class="{{{ if !target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unmute">[[user:unmute_account]]</a></li>
+									<li class="{{{ if target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="mute">[[user:mute-account]]</a></li>
+									<li class="{{{ if !target.user.muted }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="unmute">[[user:unmute-account]]</a></li>
 									{{{ end }}}
 									{{{ if privileges.admin:users }}}
 									<li><a class="dropdown-item rounded-1" href="#" data-action="delete-account">[[user:delete-account-as-admin]]</a></li>

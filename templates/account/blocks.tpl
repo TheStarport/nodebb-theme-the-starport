@@ -33,7 +33,7 @@
 		<!-- IMPORT partials/users/item.tpl -->
 		{{{ end }}}
 	</div>
-	<div class="alert alert-warning text-center"{{{ if users.length }}} style="display: none;"{{{ end }}}>[[user:has_no_blocks]]</div>
+	<div class="alert alert-warning text-center"{{{ if users.length }}} style="display: none;"{{{ end }}}>[[user:has-no-blocks]]</div>
 	<!-- IMPORT partials/paginator.tpl -->
 </div>
 

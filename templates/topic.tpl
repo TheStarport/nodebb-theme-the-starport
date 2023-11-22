@@ -30,7 +30,7 @@
 					</span>
 					<a href="{config.relative_path}/category/{oldCid}" class="badge badge border text-body text-decoration-none {{{ if !oldCid }}}hidden{{{ end }}}">
 						<i class="fa fa-arrow-circle-right"></i>
-						{{{ if privileges.isAdminOrMod }}}[[topic:moved_from, {oldCategory.name}]]{{{ else }}}[[topic:moved]]{{{ end }}}
+						{{{ if privileges.isAdminOrMod }}}[[topic:moved-from, {oldCategory.name}]]{{{ else }}}[[topic:moved]]{{{ end }}}
 					</a>
 					{{{each icons}}}<span class="lh-1">{@value}</span>{{{end}}}
 				</span>

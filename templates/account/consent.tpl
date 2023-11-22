@@ -15,7 +15,7 @@
 		</div>
 		{{{ else }}}
 		<div class="alert alert-warning">
-			[[user:consent.not_received]]
+			[[user:consent.not-received]]
 			<br /><br />
 			<div class="text-center">
 				<button class="btn btn-warning" data-action="consent">[[user:consent.give]]</button>
