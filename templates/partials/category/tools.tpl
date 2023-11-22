@@ -43,7 +43,7 @@
 		{{{if template.category}}}
 		<li>
 			<a component="topic/move-all" href="#" class="dropdown-item rounded-1 d-flex align-items-center gap-2">
-				<i class="fa fa-fw text-muted fa-arrows"></i> [[topic:thread-tools.move_all]]
+				<i class="fa fa-fw text-muted fa-arrows"></i> [[topic:thread-tools.move-all]]
 			</a>
 		</li>
 		{{{end}}}
