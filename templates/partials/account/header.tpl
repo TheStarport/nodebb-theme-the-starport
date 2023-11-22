@@ -1,4 +1,4 @@
-<div class="account w-100 mx-auto">
+<div class="mt-5 w-100 mx-auto">
 	<div data-widget-area="header">
 		{{{each widgets.header}}}
 		{{widgets.header.html}}
@@ -54,9 +54,9 @@
 					{{{ if banned }}}
 					<div class="text-xm text-muted">
 						{{{ if banned_until }}}
-						[[user:info.banned_until, {banned_until_readable}]]
+						[[user:info.banned-until, {banned-until-readable}]]
 						{{{ else }}}
-						[[user:info.banned_permanently]]
+						[[user:info.banned-permanently]]
 						{{{ end }}}
 					</div>
 					{{{ end }}}

@@ -49,7 +49,7 @@
 						<div class="mb-2 regFormEntry d-flex flex-column gap-2">
 							<label for="register-{regFormEntry.styleName}">{regFormEntry.label}</label>
 							<div id="register-{regFormEntry.styleName}">{{regFormEntry.html}}</div>
-						</div>f
+						</div>
 						{{{ end }}}
 
 						<button class="btn btn-primary" id="register" type="submit">[[register:register-now-button]]</button>
