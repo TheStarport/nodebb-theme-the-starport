@@ -57,7 +57,7 @@
 			<li class="dropdown-item rounded-1" data-name="sort" data-value="newest">[[flags:sort-newest]]</li>
 			<li class="dropdown-item rounded-1" data-name="sort" data-value="oldest">[[flags:sort-oldest]]</li>
 			<li class="dropdown-item rounded-1" data-name="sort" data-value="reports">[[flags:sort-reports]]</li>
-			<li><h6 class="dropdown-header">[[flags:sort-posts_only]]</h6></li>
+			<li><h6 class="dropdown-header">[[flags:sort-posts-only]]</h6></li>
 			<li class="dropdown-item rounded-1" data-name="sort" data-value="downvotes">[[flags:sort-downvotes]]</li>
 			<li class="dropdown-item rounded-1" data-name="sort" data-value="upvotes">[[flags:sort-upvotes]]</li>
 			<li class="dropdown-item rounded-1" data-name="sort" data-value="replies">[[flags:sort-replies]]</li>
