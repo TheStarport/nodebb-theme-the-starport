@@ -5,7 +5,7 @@
 	{{{ if (!singlePost && posts.length) }}}
 	<div class="btn-group bottom-sheet" component="post-queue/bulk-actions">
 		<button type="button" class="btn-ghost-sm dropdown-toggle" data-bs-toggle="dropdown" autocomplete="off" aria-haspopup="true" aria-expanded="false">
-			<i class="fa fa-clone"></i><span class="fw-semibold"> [[post-queue:bulk_actions]]</span>
+			<i class="fa fa-clone"></i><span class="fw-semibold"> [[post-queue:bulk-actions]]</span>
 		</button>
 		<ul class="dropdown-menu p-1 text-sm dropdown-menu-end">
 			{{{ if canAccept }}}
@@ -27,8 +27,8 @@
 	{{{ if (!posts.length && isAdmin) }}}
 	{{{ if !singlePost }}}
 	<div class="alert alert-info">
-		[[post-queue:no_queued_posts]]
-		{{{ if !enabled }}}<p>[[post-queue:enabling_help, {config.relative_path}/admin/settings/post#post-queue]]</p>{{{ end }}}
+		[[post-queue:no-queued-posts]]
+		{{{ if !enabled }}}<p>[[post-queue:enabling-help, {config.relative_path}/admin/settings/post#post-queue]]</p>{{{ end }}}
 	</div>
 	{{{ else }}}
 	<div class="alert alert-info d-flex align-items-md-center d-flex flex-column flex-md-row">

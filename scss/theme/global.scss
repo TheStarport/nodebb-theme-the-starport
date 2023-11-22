@@ -79,6 +79,22 @@ a, a:hover {
   background-color: $primary-100-65;
 }
 
+.status-online {
+  color: #198754;
+}
+
+.status-away {
+  color: #ffc107;
+}
+
+.status-dnd {
+  color: #dc3545;
+}
+
+.status-offline {
+  color: #6c757d;
+}
+
 @media (max-width: 992px) {
   .mobile-hide {
     display: none!important;
