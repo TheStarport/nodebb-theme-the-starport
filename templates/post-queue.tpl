@@ -61,7 +61,7 @@
 								<button href="#" class="btn btn-outline-sm text-xs dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">[[global:actions]]</button>
 								<ul class="dropdown-menu p-1 text-sm">
 									{{{ if privileges.view:users:info }}}
-									<li><a class="dropdown-item rounded-1" href="{config.relative_path}/user/{./user.userslug}/info">[[user:account_info]]</a></li>
+									<li><a class="dropdown-item rounded-1" href="{config.relative_path}/user/{./user.userslug}/info">[[user:account-info]]</a></li>
 									{{{ end }}}
 									{{{ if privileges.ban }}}
 									<li class="{{{ if target.user.banned }}}hidden{{{ end }}}"><a class="dropdown-item rounded-1" href="#" data-action="ban">[[user:ban-account]]</a></li>
@@ -73,8 +73,8 @@
 									{{{ end }}}
 									{{{ if privileges.admin:users }}}
 									<li><a class="dropdown-item rounded-1" href="#" data-action="delete-account">[[user:delete-account-as-admin]]</a></li>
-									<li><a class="dropdown-item rounded-1" href="#" data-action="delete-content">[[user:delete_content]]</a></li>
-									<li><a class="dropdown-item rounded-1" href="#" data-action="delete-all">[[user:delete_all]]</a></li>
+									<li><a class="dropdown-item rounded-1" href="#" data-action="delete-content">[[user:delete-content]]</a></li>
+									<li><a class="dropdown-item rounded-1" href="#" data-action="delete-all">[[user:delete-all]]</a></li>
 									{{{ end }}}
 								</ul>
 							</div>

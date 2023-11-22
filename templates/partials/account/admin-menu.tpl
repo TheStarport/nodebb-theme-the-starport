@@ -4,7 +4,7 @@
 	</button>
 	<ul class="dropdown-menu dropdown-menu-end p-1 text-sm account-sub-links">
 		<li>
-			<a class="dropdown-item rounded-1" href="{config.relative_path}/user/{userslug}/info">[[user:account_info]]</a>
+			<a class="dropdown-item rounded-1" href="{config.relative_path}/user/{userslug}/info">[[user:account-info]]</a>
 		</li>
 		{{{ if (canBan || canMute) }}}
 		<li role="separator" class="dropdown-divider"></li>
@@ -28,8 +28,8 @@
 		{{{ if isAdmin }}}
 		<li>
 			<a component="account/delete-account" href="#" class="dropdown-item rounded-1">[[user:delete-account-as-admin]]</a>
-			<a component="account/delete-content" href="#" class="dropdown-item rounded-1">[[user:delete_content]]</a>
-			<a component="account/delete-all" href="#" class="dropdown-item rounded-1">[[user:delete_all]]</a>
+			<a component="account/delete-content" href="#" class="dropdown-item rounded-1">[[user:delete-content]]</a>
+			<a component="account/delete-all" href="#" class="dropdown-item rounded-1">[[user:delete-all]]</a>
 		</li>
 		{{{ end }}}
 	</ul>
