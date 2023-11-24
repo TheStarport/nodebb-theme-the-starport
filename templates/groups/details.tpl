@@ -1,5 +1,5 @@
-<div component="groups/container" class="groups details">
-	<div class="cover position-absolute start-0 top-0" component="groups/cover" style="background-image: url({group.cover:url}); background-position: {group.cover:position};">
+<div component="groups/container" class="mt-3">
+	<!--<div class="cover position-absolute start-0 top-0" component="groups/cover" style="background-image: url({group.cover:url}); background-position: {group.cover:position};">
 		<div class="container">
 			{{{ if group.isOwner }}}
 			<div class="controls text-center">
@@ -11,9 +11,9 @@
 			<div class="indicator text-bg-primary">[[groups:cover_saving]] <i class="fa fa-fw fa-refresh fa-spin"></i></div>
 			{{{ end }}}
 		</div>
-	</div>
+	</div>-->
 
-	<div class="d-flex flex-column flex-md-row justify-content-md-between pb-4 mb-4 mt-2 border-bottom">
+	<div class="d-flex flex-column flex-md-row justify-content-md-between pb-4 mb-4 border-bottom">
 		<div class="d-flex flex-column mt-1">
 			<div class="d-flex align-items-center gap-2">
 				<h3 class="mb-0">{group.displayName}</h3>
