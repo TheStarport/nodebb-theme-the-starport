@@ -70,7 +70,7 @@
 				</div>
 
 				<div class="tab-pane fade" id="groups-admin" role="tabpanel">
-					<h3 class="fw-semibold fs-5 mb-3">[[groups:details.owner_options]]</h3>
+					<h3 class="fw-semibold fs-5 mb-3">[[groups:details.owner-options]]</h3>
 					<!-- IMPORT partials/groups/admin.tpl -->
 				</div>
 				{{{ end }}}

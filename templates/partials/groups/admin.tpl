@@ -20,14 +20,14 @@
 					</p>
 					{{{ end }}}
 					<p class="form-text text-xs m-0">
-						[[groups:details.private_help]]
+						[[groups:details.private-help]]
 					</p>
 				</div>
 				<div class="form-check">
 					<label class="form-check-label">[[groups:details.hidden]]</label>
 					<input class="form-check-input" name="hidden" type="checkbox"{{{ if group.hidden }}} checked{{{ end }}}>
 					<p class="form-text text-xs m-0">
-						[[groups:details.hidden_help]]
+						[[groups:details.hidden-help]]
 					</p>
 				</div>
 
@@ -51,10 +51,10 @@
 
 
 				<div class="mb-2">
-					<label class="form-label text-xs text-muted" for="userTitle">[[groups:details.badge_text]]</label>
+					<label class="form-label text-xs text-muted" for="userTitle">[[groups:details.badge-text]]</label>
 					<div class="d-flex gap-1">
 						<input component="groups/userTitleOption" class="form-control" name="userTitle" id="userTitle" type="text" maxlength="40" value="{group.userTitleEscaped}"{{{ if !group.userTitleEnabled }}} disabled{{{ end }}} />
-						<button component="groups/userTitleOption" type="button" class="btn btn-outline-secondary text-nowrap" data-action="icon-select"{{{ if !group.userTitleEnabled }}} disabled{{{ end }}}>[[groups:details.change_icon]]</button>
+						<button component="groups/userTitleOption" type="button" class="btn btn-outline-secondary text-nowrap" data-action="icon-select"{{{ if !group.userTitleEnabled }}} disabled{{{ end }}}>[[groups:details.change-icon]]</button>
 						<input type="hidden" name="icon" value="{{{ if group.icon }}}{group.icon}{{{ end }}}" />
 						<div id="icons" class="hidden">
 							<div class="icon-container">
@@ -66,11 +66,11 @@
 					</div>
 				</div>
 				<div class="mb-2">
-					<label class="form-label text-xs text-muted" for="labelColor" class="badge-color-label">[[groups:details.change_label_colour]]</label>
+					<label class="form-label text-xs text-muted" for="labelColor" class="badge-color-label">[[groups:details.change-label-colour]]</label>
 					<input class="form-control" component="groups/userTitleOption" type="color" name="labelColor" value="{{{ if group.labelColor }}}{group.labelColor}{{{ end }}}" />
 				</div>
 				<div class="mb-2">
-					<label class="form-label text-xs text-muted" for="color" class="badge-color-label">[[groups:details.change_text_colour]]</label>
+					<label class="form-label text-xs text-muted" for="color" class="badge-color-label">[[groups:details.change-text-colour]]</label>
 					<input class="form-control" component="groups/userTitleOption" type="color" name="textColor" value="{{{ if group.textColor }}}{group.textColor}{{{ end }}}" />
 				</div>
 			</div>
