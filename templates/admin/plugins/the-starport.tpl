@@ -1,48 +1,43 @@
-<div class="acp-page-container">
-	<!-- IMPORT admin/partials/settings/header.tpl -->
-
-	<div class="row m-0">
-		<div id="spy-container" class="col-12 col-md-8 px-0 mb-4" tabindex="0">
-			<form role="form" class="the-starport-settings">
-				<div class="form-check form-switch">
-					<input type="checkbox" class="form-check-input" id="enableQuickReply" name="enableQuickReply" />
-					<label for="enableQuickReply" class="form-check-label">[[themes/the-starport:settings.enableQuickReply]]</label>
-				</div>
-				<div class="form-check form-switch">
-					<input type="checkbox" class="form-check-input" id="centerHeaderElements" name="centerHeaderElements" />
-					<label for="centerHeaderElements" class="form-check-label">[[themes/the-starport:settings.centerHeaderElements]]</label>
-				</div>
-				<div class="form-check form-switch">
-					<input type="checkbox" class="form-check-input" id="mobileTopicTeasers" name="mobileTopicTeasers" />
-					<label for="mobileTopicTeasers" class="form-check-label">[[themes/the-starport:settings.mobileTopicTeasers]]</label>
-				</div>
-				<div class="form-check form-switch">
-					<input type="checkbox" class="form-check-input" id="stickyToolbar" name="stickyToolbar" />
-					<div for="stickyToolbar" class="form-check-label">
-						[[themes/the-starport:settings.stickyToolbar]]
-						<p class="form-text">
-							[[themes/the-starport:settings.stickyToolbar.help]]
-						</p>
-					</div>
-				</div>
-				<div class="form-check form-switch">
-					<input type="checkbox" class="form-check-input" id="autohideBottombar" name="autohideBottombar" />
-					<div for="autohideBottombar" class="form-check-label">
-						[[themes/the-starport:settings.autohideBottombar]]
-						<p class="form-text">
-							[[themes/the-starport:settings.autohideBottombar.help]]
-						</p>
-					</div>
-				</div>
-				<div class="form-check form-switch">
-					<input type="checkbox" class="form-check-input" id="chatModals" name="chatModals" />
-					<div for="chatModals" class="form-check-label">
-						[[themes/the-starport:settings.chatModals]]
-					</div>
-				</div>
-			</form>
-		</div>
-
-		<!-- IMPORT admin/partials/settings/toc.tpl -->
-	</div>
+<div class="row">
+    <div class="col-lg-9">
+        <form class="plugin-calendar-settings" id="plugin-calendar-settings">
+            <div class="panel panel-default">
+                <div class="panel-heading">Calendar</div>
+                <div class="panel-body">
+                    <div class="form-group row">
+                        <label for="bbKeyId" class="col-xs-12 col-sm-8">
+                            The backblaze key id (or account id if using a master key) for authenticating to backblaze.
+                        </label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="text" class="form-control" name="bbKeyId" id="bbKeyId" value="{settings.bbKeyId}" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bbKey" class="col-xs-12 col-sm-8">
+                            The secret key for authenticating against a backblaze key id
+                        </label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="password" class="form-control" name="bbKey" id="bbKey" value="{settings.bbKey}" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bucketId" class="col-xs-12 col-sm-8">
+                            The bucket containing the files you want to be accessible
+                        </label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="text" class="form-control" name="bucketId" id="bucketId" value="{settings.bucketId}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">Control Panel</div>
+            <div class="panel-body">
+                <button class="btn btn-primary" id="save">Save Settings</button>
+            </div>
+        </div>
+    </div>
 </div>
