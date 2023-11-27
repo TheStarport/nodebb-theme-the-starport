@@ -6,7 +6,7 @@ define('admin/plugins/the-starport', ['alerts'], function (alerts) {
             bucketId: $('#bucketId').val(),
         };
 
-        $.get('/admin/plugins/the-starport/save', { settings: JSON.stringify(settings) }, function () {
+        $.get(location.origin + config.relative_path + '/admin/plugins/the-starport/save', { settings: JSON.stringify(settings) }, function () {
             alerts.success();
         }).catch(() => alerts.warning("Failed to connect to backblaze. Settings still saved."));
     });
