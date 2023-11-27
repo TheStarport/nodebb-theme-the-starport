@@ -21,11 +21,11 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="bucketId" class="col-xs-12 col-sm-8">
+                        <label for="bucketName" class="col-xs-12 col-sm-8">
                             The bucket containing the files you want to be accessible
                         </label>
                         <div class="col-xs-12 col-sm-4">
-                            <input type="text" class="form-control" name="bucketId" id="bucketId" value="{settings.bucketId}" />
+                            <input type="text" class="form-control" name="bucketName" id="bucketName" value="{settings.bucketName}" />
                         </div>
                     </div>
                 </div>

@@ -18,30 +18,10 @@ $(window).on('action:ajaxify.end', function(ev, data) {
     const url = data.url;
     if (url === 'downloads') {
         window.downloading = window.downloading || false;
-        const downloadCards = $('a[data-link][data-token][data-fileId]');
+        const downloadCards = $('a[data-link][data-token][data-name][data-bucket]');
         downloadCards.each(function() {
-            $(this).on('click', (_) => {
-                if (window.downloading) {
-                    // prevent multiple concurrent downloads
-                    return;
-                }
-
-                $.ajax({
-                    type: 'GET',
-                    url: `${$(this).attr('data-link')}/b2api/v2/b2_download_file_by_id?fileId=${$(this).attr('data-fileId')}`,
-                    dataType: 'json',
-                    beforeSend: function (xhr) {
-                        xhr.setRequestHeader('Authorization', $(this).attr('data-token'));
-                        window.downloading = true;
-                    },
-                    success: function () {
-                        window.downloading = false;
-                    },
-                    error: function () {
-                        window.downloading = false;
-                    }
-                });
-            })
+            $(this).on('click', () => window.location.href =
+                `${$(this).attr('data-link')}/file/${$(this).attr('data-bucket')}/${$(this).attr('data-name')}?Authorization=${$(this).attr('data-token')}`)
         });
     }
 });

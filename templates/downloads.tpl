@@ -11,7 +11,7 @@
             {{{ each files }}}
             <div class="col-xl-4 col-lg-6 col-sm-12 mb-3">
                 <div class="card h-100 hover-primary border-0">
-                    <a href="#" data-link="{downloadUrl}" data-token="{token}" data-fileId="{./fileId}" class="d-block h-100 text-decoration-none">
+                    <a href="#" data-link="{downloadUrl}" data-token="{token}" data-name="{./fileName}" data-bucket="{bucket}" class="d-block h-100 text-decoration-none">
                         <div class="card-body d-flex flex-column gap-1 h-100">
                             <div class="d-flex">
                                 <div class="flex-grow-1 fs-6 fw-semibold">{./fileName}</div>

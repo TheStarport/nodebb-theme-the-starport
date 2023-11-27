@@ -3,7 +3,7 @@ define('admin/plugins/the-starport', ['alerts'], function (alerts) {
         const settings = {
             bbKey: $('#bbKey').val(),
             bbKeyId: $('#bbKeyId').val(),
-            bucketId: $('#bucketId').val(),
+            bucketName: $('#bucketName').val(),
         };
 
         $.get(location.origin + config.relative_path + '/admin/plugins/the-starport/save', { settings: JSON.stringify(settings) }, function () {
