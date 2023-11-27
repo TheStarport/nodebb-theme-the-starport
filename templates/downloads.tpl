@@ -14,17 +14,13 @@
                     <a href="#" data-link="{downloadUrl}" data-token="{token}" data-fileId="{./fileId}" class="d-block h-100 text-decoration-none">
                         <div class="card-body d-flex flex-column gap-1 h-100">
                             <div class="d-flex">
-                                <div class="flex-grow-1 fs-6 fw-semibold">File Name ({./fileName})</div>
+                                <div class="flex-grow-1 fs-6 fw-semibold">{./fileName}</div>
                                 <div class="flex-shrink-0 text-sm">
                                     <i class="text-muted fa-solid fa-file-zipper"></i>   {./fileSize}
                                 </div>
                             </div>
-                            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.
+                            <div class="text-sm">
+                                Description TBD
                             </div>
                         </div>
                     </a>
