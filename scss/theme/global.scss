@@ -79,6 +79,10 @@ a, a:hover {
   background-color: $primary-100-65;
 }
 
+.hover-dim:hover {
+  background-color: $background-dim;
+}
+
 .status-online {
   color: #198754;
 }
