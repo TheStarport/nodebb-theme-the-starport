@@ -1,1 +1,10 @@
+// Font overrides that replace the popin font that we do not want to import
+.ff-sans, .ff-secondary, .sidebar .nav-link, .btn-ghost, .btn-outline, .btn-outline-sm, .btn-ghost-sm, .breadcrumb .breadcrumb-item, .breadcrumb .breadcrumb-item::before {
+  font-family: "Titillium Web", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+:root,[data-bs-theme=light] {
+  --bs-font-sans-serif: "Titillium Web", system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
 @import "../nodebb-theme-harmony/theme";
