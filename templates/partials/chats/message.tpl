@@ -32,11 +32,11 @@
 				<button class="btn btn-sm btn-link" data-action="restore" title="[[topic:restore]]"><i class="fa fa-repeat"></i></button>
 				{{{ end }}}
 				{{{ if (isAdminOrGlobalMod || isOwner )}}}
-				<button class="btn btn-sm btn-link" data-action="pin" title="[[modules:chat.pin_message]]"><i class="fa fa-thumbtack"></i></button>
-				<button class="btn btn-sm btn-link" data-action="unpin" title="[[modules:chat.unpin_message]]"><i class="fa fa-thumbtack fa-rotate-90"></i></button>
+				<button class="btn btn-sm btn-link" data-action="pin" title="[[modules:chat.pin-message]]"><i class="fa fa-thumbtack"></i></button>
+				<button class="btn btn-sm btn-link" data-action="unpin" title="[[modules:chat.unpin-message]]"><i class="fa fa-thumbtack fa-rotate-90"></i></button>
 				{{{ end }}}
 				{{{ if isAdminOrGlobalMod }}}
-				<button class="btn btn-sm btn-link chat-ip-button" title="[[modules:chat.show_ip]]"><i class="fa fa-info-circle"></i></button>
+				<button class="btn btn-sm btn-link chat-ip-button" title="[[modules:chat.show-ip]]"><i class="fa fa-info-circle"></i></button>
 				{{{ end }}}
 			</div>
 		</div>

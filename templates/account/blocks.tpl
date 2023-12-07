@@ -4,7 +4,7 @@
 	<div class="justify-content-end">
 		<div class="dropdown">
 			<div class="input-group">
-				<input class="form-control form-control-sm" type="text" id="user-search" placeholder="[[users:enter_username]]" data-bs-toggle="dropdown" autocomplete="off"/>
+				<input class="form-control form-control-sm" type="text" id="user-search" placeholder="[[users:enter-username]]" data-bs-toggle="dropdown" autocomplete="off"/>
 
 				<ul component="blocks/search/list" class="dropdown-menu dropdown-menu-end p-1 text-sm block-edit overflow-auto" style="max-height:300px;">
 					<li><a href="#" class="dropdown-item">[[admin/menu:search.start_typing]]</a></li>

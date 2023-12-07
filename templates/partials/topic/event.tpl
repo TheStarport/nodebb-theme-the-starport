@@ -6,7 +6,7 @@
 		{./text}
 	</span>
 	{{{ if privileges.isAdminOrMod }}}
-	<span component="topic/event/delete" data-topic-event-id="{./id}" data-topic-event-type="{./type}" class="timeline-text pointer" title="[[topic:delete_event]]"><i class="fa fa-trash"></i></span>
+	<span component="topic/event/delete" data-topic-event-id="{./id}" data-topic-event-type="{./type}" class="timeline-text pointer" title="[[topic:delete-event]]"><i class="fa fa-trash"></i></span>
 	{{{ end }}}
 </li>
 
