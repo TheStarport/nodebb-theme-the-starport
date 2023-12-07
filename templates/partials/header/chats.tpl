@@ -1,5 +1,8 @@
 <a class="navbar-link" data-bs-toggle="dropdown" href="{relative_path}/user/{user.userslug}/chats" id="chat_dropdown" component="chat/dropdown" data-ajaxify="false" role="button">
-    <i component="chat/icon" class="fa {{{ if unreadCount.chat}}}fa-comment{{{ else }}}fa-comment-o{{{ end }}} fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="d-inline d-sm-none">[[global:header.chats]]</span>
+    {{{ if unreadCount.chat}}}
+    <i component="chat/icon" class="fa fa-stack-1x fa-2xs fa-circle" style="color: red; font-size: 8px; padding-left: 1rem; padding-top: 1rem;"></i>
+    {{{ end }}}
+    <i component="chat/icon" class="fa fa-comment fa-fw unread-count" data-content="{unreadCount.chat}"></i> <span class="d-inline d-sm-none">[[global:header.chats]]</span>
 </a>
 <ul class="navbar-dropdown pb-0 mt-3 dropdown-menu dropdown-menu-end" aria-labelledby="chat_dropdown">
     <li>

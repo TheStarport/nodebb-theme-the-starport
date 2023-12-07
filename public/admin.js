@@ -4,6 +4,8 @@ define('admin/plugins/the-starport', ['alerts'], function (alerts) {
             bbKey: $('#bbKey').val(),
             bbKeyId: $('#bbKeyId').val(),
             bucketName: $('#bucketName').val(),
+            webhookUrl: $('#webhook-url').val(),
+            adminWebhookUrl: $('#admin-webhook-url').val(),
         };
 
         $.get(location.origin + config.relative_path + '/admin/plugins/the-starport/save', { settings: JSON.stringify(settings) }, function () {

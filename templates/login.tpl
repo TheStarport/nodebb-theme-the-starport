@@ -12,7 +12,7 @@
 				<div class="login-block">
 					<div class="alert alert-danger alert-dismissible" id="login-error-notify" {{{ if error }}}style="display:block"{{{ else }}}style="display: none;"{{{ end }}}>
 						<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-						<strong>[[login:failed_login_attempt]]</strong>
+						<strong>[[login:failed-login-attempt]]</strong>
 						<p>{error}</p>
 					</div>
 
@@ -70,7 +70,7 @@
 			{{{ if alternate_logins }}}
 			<div class="col-12 col-md-5 col-lg-3 px-md-0">
 				<div class="alt-login-block d-flex flex-column gap-2">
-					<label>[[login:alternative_logins]]</label>
+					<label>[[login:alternative-logins]]</label>
 					<ul class="alt-logins list-unstyled">
 						{{{ each authentication }}}
 						<li class="{./name} mb-2">

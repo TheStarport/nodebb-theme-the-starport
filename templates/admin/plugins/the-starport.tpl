@@ -28,6 +28,22 @@
                             <input type="text" class="form-control" name="bucketName" id="bucketName" value="{settings.bucketName}" />
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label for="webhook-url" class="col-xs-12 col-sm-8">
+                            The Discord webhook url to post whenever a new post is made to the forum
+                        </label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="text" class="form-control" name="webhook-url" id="webhook-url" value="{settings.webhookUrl}" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="admin-webhook-url" class="col-xs-12 col-sm-8">
+                            The Discord webhook url to post to whenever a new user is created on the forum
+                        </label>
+                        <div class="col-xs-12 col-sm-4">
+                            <input type="text" class="form-control" name="admin-webhook-url" id="admin-webhook-url" value="{settings.adminWebhookUrl}" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>

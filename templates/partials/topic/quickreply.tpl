@@ -16,7 +16,7 @@
 		<div>
 			<div class="d-flex justify-content-end gap-2">
 				<button type="submit" component="topic/quickreply/expand" class="btn btn-sm btn-outline" formmethod="get"><i class="fa fa-expand"></i></button>
-				<button type="submit" component="topic/quickreply/button" class="btn btn-sm btn-primary">[[topic:post_quick_reply]]</button>
+				<button type="submit" component="topic/quickreply/button" class="btn btn-sm btn-primary">[[topic:post-quick-reply]]</button>
 			</div>
 		</div>
 	</form>

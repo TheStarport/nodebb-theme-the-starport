@@ -4,8 +4,10 @@
       { "hook": "static:app.load", "method": "init" },
       { "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
       { "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
-      { "hook": "filter:settings.get", "method": "getAdminSettings"},
-      { "hook": "filter:middleware.renderHeader", "method": "filterMiddlewareRenderHeader" }
+      { "hook": "filter:settings.get", "method": "getAdminSettings" },
+      { "hook": "filter:middleware.renderHeader", "method": "filterMiddlewareRenderHeader" },
+      { "hook": "filter:post.create", "method": "onPostCreate" },
+      { "hook": "filter:user.addToApprovalQueue", "method": "onAddToApprovalQueue" }
 	],
 	"scripts": [
 		"public/client.js"

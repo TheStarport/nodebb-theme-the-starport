@@ -1,5 +1,8 @@
 <a href="{relative_path}/notifications" class="navbar-link" data-bs-toggle="dropdown" id="notif_dropdown" data-ajaxify="false" role="button">
-    <i component="notifications/icon" class="fa fa-fw {{{ if unreadCount.notification}}}fa-bell{{{ else }}}fa-bell-o{{{ end }}} unread-count" data-content="{unreadCount.notification}"></i>
+    {{{ if unreadCount.notification}}}
+    <i component="notifications/icon" class="fa fa-stack-1x fa-2xs fa-circle" style="color: red; font-size: 8px; padding-left: 1rem; padding-top: 1rem;"></i>
+    {{{ end }}}
+    <i component="notifications/icon" class="fa fa-fw fa-bell unread-count" data-content="{unreadCount.notification}"></i>
 </a>
 <ul class="p-0 mt-3 navbar-dropdown dropdown-menu dropdown-menu-end" aria-labelledby="notif_dropdown">
     <li>

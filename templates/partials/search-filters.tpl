@@ -149,7 +149,7 @@
 						<option value="relevance">[[search:relevance]]</option>
 						<option value="timestamp">[[search:post_time]]</option>
 						<option value="votes">[[search:votes]]</option>
-						<option value="topic.lastposttime">[[search:last_reply_time]]</option>
+						<option value="topic.lastposttime">[[search:last-reply-time]]</option>
 						<option value="topic.title">[[search:topic_title]]</option>
 						<option value="topic.postcount">[[search:number_of_replies]]</option>
 						<option value="topic.viewcount">[[search:number_of_views]]</option>
