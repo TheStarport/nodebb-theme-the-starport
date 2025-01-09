@@ -2,7 +2,7 @@
 <div class="show-more-container">
 	<div class="text-center d-block d-md-none">
 		<a href="{url}" class="btn btn-primary">
-			[[search:see_more_results, {matchCount}]]
+			[[search:see-more-results, {matchCount}]]
 		</a>
 	</div>
 	<li role="separator" class="dropdown-divider d-block d-md-none"></li>
@@ -36,7 +36,7 @@
 {{{ if multiplePages }}}
 <div class="text-center mt-2 d-none d-md-block">
 	<a href="{url}" class="btn btn-sm btn-primary">
-		[[search:see_more_results, {matchCount}]]
+		[[search:see-more-results, {matchCount}]]
 	</a>
 </div>
 {{{ end }}}

@@ -28,13 +28,13 @@
 	{{{ if !singlePost }}}
 	<div class="alert alert-info">
 		[[post-queue:no-queued-posts]]
-		{{{ if !enabled }}}<p>[[post-queue:enabling-help, {config.relative_path}/admin/settings/post#post-queue]]</p>{{{ end }}}
+		{{{ if !enabled }}}<p>[[post-queue:enabling-help, {config.relative-path}/admin/settings/post#post-queue]]</p>{{{ end }}}
 	</div>
 	{{{ else }}}
 	<div class="alert alert-info d-flex align-items-md-center d-flex flex-column flex-md-row">
-		<p class="mb-md-0">[[post-queue:no_single_post]]</p>
+		<p class="mb-md-0">[[post-queue:no-single-post]]</p>
 		<div class="d-grid ms-md-auto">
-			<a class="btn btn-sm btn-primary flex-shrink text-nowrap" href=".">[[post-queue:back_to_list]]</a>
+			<a class="btn btn-sm btn-primary flex-shrink text-nowrap" href=".">[[post-queue:back-to-list]]</a>
 		</div>
 	</div>
 	{{{ end }}}

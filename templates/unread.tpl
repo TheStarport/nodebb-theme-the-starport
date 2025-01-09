@@ -12,7 +12,7 @@
 			<div id="category-no-topics" class="alert alert-info {{{ if topics.length }}}hidden{{{ end }}}">[[unread:no-unread-topics]]</div>
 
 			<!-- IMPORT partials/topics_list.tpl -->
-			<button id="load-more-btn" class="btn btn-primary hide">[[unread:load_more]]</button>
+			<button id="load-more-btn" class="btn btn-primary hide">[[unread:load-more]]</button>
 			{{{ if config.usePagination }}}
 			<!-- IMPORT partials/paginator.tpl -->
 			{{{ end }}}

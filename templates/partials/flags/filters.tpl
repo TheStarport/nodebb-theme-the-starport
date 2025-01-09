@@ -79,7 +79,7 @@
 
 	<div class="btn-group bottom-sheet">
 		<a class="filter-btn btn btn-light btn-sm border {{{ if filters.type }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">{{{ if filters.type }}}[[flags:filter-type_{./filters.type}]]{{{ else }}}[[flags:filter-type]]{{{ end }}}</span>
+			<span class="filter-label">{{{ if filters.type }}}[[flags:filter-type-{./filters.type}]]{{{ else }}}[[flags:filter-type]]{{{ end }}}</span>
 			<span class="caret"></span>
 		</a>
 		<ul class="dropdown-menu p-1 text-sm">

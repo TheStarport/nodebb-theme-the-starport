@@ -68,7 +68,7 @@
 			{{{ if alternate_logins }}}
 			<div class="col-12 col-md-5 col-lg-3 px-md-0">
 				<div class="alt-register-block d-flex flex-column gap-2">
-					<label>[[register:alternative_registration]]</label>
+					<label>[[register:alternative-registration]]</label>
 					<ul class="alt-logins list-unstyled">
 						{{{ each authentication }}}
 						<li class="{./name} mb-2">

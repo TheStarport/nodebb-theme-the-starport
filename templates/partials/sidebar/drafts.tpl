@@ -37,11 +37,11 @@
 							{{{ end }}}
 
 							{{{ if (./action == "posts.reply") }}}
-							<div class="text text-xs fw-semibold line-clamp-2 text-break">[[topic:composer.replying_to, "{./title}"]]</div>
+							<div class="text text-xs fw-semibold line-clamp-2 text-break">[[topic:composer.replying-to, "{./title}"]]</div>
 							{{{ end }}}
 
 							{{{ if (./action == "posts.edit") }}}
-							<div class="text text-xs fw-semibold line-clamp-2">[[topic:composer.editing_in, "{./title}"]]</div>
+							<div class="text text-xs fw-semibold line-clamp-2">[[topic:composer.editing-in, "{./title}"]]</div>
 							{{{ end }}}
 
 							{{{ if ./text }}}

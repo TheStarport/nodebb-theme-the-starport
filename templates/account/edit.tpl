@@ -86,7 +86,7 @@
 
 			{{{ if config.requireEmailConfirmation }}}
 			{{{ if (email && isSelf) }}}
-			<a id="confirm-email" href="#" class="btn btn-warning {{{ if email:confirmed }}}hide{{{ end }}}">[[user:confirm_email]]</a><br/><br/>
+			<a id="confirm-email" href="#" class="btn btn-warning {{{ if email:confirmed }}}hide{{{ end }}}">[[user:confirm-email]]</a><br/><br/>
 			{{{ end }}}
 			{{{ end }}}
 		</div>
@@ -98,7 +98,7 @@
 			<div class="list-group-item d-flex align-items-center justify-content-between">
 				<a class="text-sm text-decoration-none" data-component="{./component}" href="{{{ if ./url }}}{./url}{{{ else }}}#{{{ end }}}" target="{{{ if ./associated }}}_blank{{{ else }}}_top{{{ end }}}">
 					{{{ if ./icon }}}<i class="fa {./icon}"></i>{{{ end }}}
-					{{{ if ./associated }}}[[user:sso.associated]]{{{ else }}}[[user:sso.not_associated]]{{{ end }}}
+					{{{ if ./associated }}}[[user:sso.associated]]{{{ else }}}[[user:sso.not-associated]]{{{ end }}}
 					{./name}
 				</a>
 				{{{ if ./deauthUrl }}}

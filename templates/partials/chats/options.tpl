@@ -43,7 +43,7 @@
 	</div>
 
 	<!-- pinned messages -->
-	<button component="chat/pinned/messages/btn" class="btn-ghost-sm d-none d-lg-flex flex-nowrap" title="[[modules:chat.pinned_messages]]" data-bs-toggle="tooltip" data-bs-placement="bottom">
+	<button component="chat/pinned/messages/btn" class="btn-ghost-sm d-none d-lg-flex flex-nowrap" title="[[modules:chat.pinned-messages]]" data-bs-toggle="tooltip" data-bs-placement="bottom">
 		<i class="fa fa-thumb-tack text-muted"></i>
 	</button>
 
@@ -82,7 +82,7 @@
 
 	<!-- users toggle -->
 	{{{ if users.length }}}
-	<div component="chat/user/list/btn" class="btn-ghost-sm d-none d-lg-flex flex-nowrap gap-3" title="[[modules:chat.view_users_list]]" data-bs-toggle="tooltip" data-bs-placement="bottom">
+	<div component="chat/user/list/btn" class="btn-ghost-sm d-none d-lg-flex flex-nowrap gap-3" title="[[modules:chat.view-users-list]]" data-bs-toggle="tooltip" data-bs-placement="bottom">
 		<div class="d-flex text-nowrap">
 			{{{ if ./users.0 }}}
 			<span style="width: 18px; z-index: 3;" class="text-decoration-none" href="{config.relative_path}/user/{./users.0.userslug}">{buildAvatar(./users.0, "24px", true)}</span>

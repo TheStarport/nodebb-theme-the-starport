@@ -5,20 +5,20 @@
 		<div class="d-grid gap-1">
 			<a class="btn btn-ghost border btn-sm justify-content-start" href="{config.relative_path}/{type_path}/{targetId}">
 				<i class="fa fa-fw fa-external-link text-primary"></i>
-				[[flags:go_to_target]]
+				[[flags:go-to-target]]
 			</a>
 
 			{{{ if target.uid }}}
 			<div class="btn-group dropend" data-uid="{target.uid}">
 				<button type="button" class="btn btn-ghost border btn-sm justify-content-start dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<i class="fa fa-fw fa-street-view text-primary"></i>
-					[[flags:flagged_user]]
+					[[flags:flagged-user]]
 					<i class="fa fa-chevron-right ms-auto text-secondary"></i>
 				</button>
 				<ul class="dropdown-menu p-1 text-sm">
-					<li><a class="dropdown-item rounded-1" href="{config.relative_path}/uid/{target.uid}">[[flags:view_profile]]</a></li>
+					<li><a class="dropdown-item rounded-1" href="{config.relative_path}/uid/{target.uid}">[[flags:view-profile]]</a></li>
 					{{{ if !config.disableChat }}}
-						<li><a class="dropdown-item rounded-1" href="#" data-action="chat">[[flags:start_new_chat]]</a></li>
+						<li><a class="dropdown-item rounded-1" href="#" data-action="chat">[[flags:start-new-chat]]</a></li>
 					{{{ end }}}
 					<li class="dropdown-divider"></li>
 					{{{ if privileges.ban }}}
@@ -40,15 +40,15 @@
 
 			<a class="btn btn-ghost border btn-sm justify-content-start" href="#" data-action="assign">
 				<i class="fa fa-fw fa-id-card-o text-primary"></i>
-				[[flags:assign_to_me]]
+				[[flags:assign-to-me]]
 			</a>
 
 			{{{ if type_bool.post }}}
 			{{{ if !target.deleted}}}
-			<a class="d-flex gap-2 align-items-center btn btn-sm btn-outline-danger border border-secondary-subtle text-start" href="#" data-action="delete-post"><i class="fa fa-fw fa-trash"></i> [[flags:delete_post]]</a>
+			<a class="d-flex gap-2 align-items-center btn btn-sm btn-outline-danger border border-secondary-subtle text-start" href="#" data-action="delete-post"><i class="fa fa-fw fa-trash"></i> [[flags:delete-post]]</a>
 			{{{ else }}}
-			<a class="d-flex gap-2 align-items-center btn btn-sm btn-danger border border-secondary-subtle text-start" href="#" data-action="purge-post"><i class="fa fa-fw fa-trash"></i> [[flags:purge_post]]</a>
-			<a class="d-flex gap-2 align-items-center btn btn-sm btn-outline-success border border-secondary-subtle text-start" href="#" data-action="restore-post"><i class="fa fa-fw fa-reply"></i><i class="fa fa-trash"></i> [[flags:restore_post]]</a>
+			<a class="d-flex gap-2 align-items-center btn btn-sm btn-danger border border-secondary-subtle text-start" href="#" data-action="purge-post"><i class="fa fa-fw fa-trash"></i> [[flags:purge-post]]</a>
+			<a class="d-flex gap-2 align-items-center btn btn-sm btn-outline-success border border-secondary-subtle text-start" href="#" data-action="restore-post"><i class="fa fa-fw fa-reply"></i><i class="fa fa-trash"></i> [[flags:restore-post]]</a>
 			{{{ end }}}
 			{{{ end }}}
 		</div>
@@ -66,7 +66,7 @@
 			<div>
 				<label class="text-muted fw-semibold" for="assignee">[[flags:assignee]]</label>
 				<select class="form-control form-control-sm" id="assignee" name="assignee" disabled>
-					<option value="">[[flags:no_assignee]]</option>
+					<option value="">[[flags:no-assignee]]</option>
 					{{{each assignees}}}
 					<option value="{../uid}">{../username}</option>
 					{{{end}}}
@@ -80,7 +80,7 @@
 		<div class="overflow-auto" component="flag/history" style="max-height: 30rem;">
 			<h2 class="h6 fw-bold">[[flags:history]]</h2>
 			{{{ if !history.length }}}
-			<div class="alert alert-success text-center">[[flags:no_history]]</div>
+			<div class="alert alert-success text-center">[[flags:no-history]]</div>
 			{{{ end }}}
 			{{{ each history }}}
 			<div class="d-flex flex-column gap-1">
@@ -127,11 +127,11 @@
 					<a href="{config.relative_path}/user/{./target.userslug}">{buildAvatar(target, "16px", true)}</a>
 					<a href="{config.relative_path}/user/{./target.userslug}">{target.username}</a>
 				</div>
-				<blockquote>{{{ if target.aboutme }}}{target.aboutme}{{{ else }}}<em>[[flags:target_aboutme_empty]]</em>{{{ end }}}</blockquote>
+				<blockquote>{{{ if target.aboutme }}}{target.aboutme}{{{ else }}}<em>[[flags:target-aboutme-empty]]</em>{{{ end }}}</blockquote>
 				{{{ end }}}
 
 				{{{ if type_bool.empty }}}
-				<div class="alert alert-warning" role="alert">[[flags:target_purged]]</div>
+				<div class="alert alert-warning" role="alert">[[flags:target-purged]]</div>
 				{{{ end }}}
 			</div>
 			<div class="flag/reports" class="pb-4 border-bottom">
@@ -152,11 +152,11 @@
 			<div class="pb-4 border-bottom">
 				<div class="d-flex align-items-center">
 					<h2 class="h6 fw-bold me-auto mb-0">[[flags:notes]]</h2>
-					<button class="btn btn-ghost border" data-action="addEditNote">[[flags:add_note]]</button>
+					<button class="btn btn-ghost border" data-action="addEditNote">[[flags:add-note]]</button>
 				</div>
 				<ul component="flag/notes" class="list-unstyled mt-4">
 					{{{ if !notes.length }}}
-					<em>[[flags:no_notes]]</em>
+					<em>[[flags:no-notes]]</em>
 					{{{ end }}}
 					{{{ each notes }}}
 					<li class="d-flex flex-column gap-1" component="flag/note" data-datetime="{./datetime}" data-index="{@index}">

@@ -25,7 +25,7 @@
 				{./roomName}
 				{{{ else }}}
 					{{{ if !./lastUser.uid }}}
-					[[modules:chat.no_users_in_room]]
+					[[modules:chat.no-users-in-room]]
 					{{{ else }}}
 					{./usernames}
 					{{{ end  }}}

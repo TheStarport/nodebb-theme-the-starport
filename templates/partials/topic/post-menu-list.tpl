@@ -41,13 +41,13 @@
 {{{ if posts.ip }}}
 <li>
 	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/copy-ip" role="menuitem" tabindex="-1" href="#" data-clipboard-text="{posts.ip}">
-		<span class="menu-icon" ><i class="fa fa-fw text-muted fa-copy"></i></span> [[topic:copy_ip]] {posts.ip}
+		<span class="menu-icon" ><i class="fa fa-fw text-muted fa-copy"></i></span> [[topic:copy-ip]] {posts.ip}
 	</a>
 </li>
 {{{ if posts.display_ip_ban }}}
 <li>
 	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/ban-ip" role="menuitem" tabindex="-1" href="#" data-ip="{posts.ip}">
-		<span class="menu-icon"><i class="fa fa-fw text-muted fa-ban"></i></span> [[topic:ban_ip]] {posts.ip}
+		<span class="menu-icon"><i class="fa fa-fw text-muted fa-ban"></i></span> [[topic:ban-ip]] {posts.ip}
 	</a>
 </li>
 {{{ end }}}
@@ -66,7 +66,7 @@
 	{{{ if (posts.display_history && privileges.posts:history)}}}
 	<li>
 		<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/view-history" role="menuitem" tabindex="-1" href="#">
-			<span class="menu-icon"><i class="fa fa-fw text-muted fa-history"></i></span> [[topic:view_history]]
+			<span class="menu-icon"><i class="fa fa-fw text-muted fa-history"></i></span> [[topic:view-history]]
 		</a>
 	</li>
 	{{{ end }}}
@@ -92,7 +92,7 @@
 
 	{{{ if postSharing.length }}}
 	{{{ if config.loggedIn }}}<li class="dropdown-divider"></li>{{{ end }}}
-	<li class="dropdown-header">[[topic:share_this_post]]</li>
+	<li class="dropdown-header">[[topic:share-this-post]]</li>
 	{{{ end }}}
 	{{{ each postSharing }}}
 		<li>
@@ -121,11 +121,11 @@
 {{{ if posts.display_moderator_tools }}}
 {{{ if posts.flags.exists }}}
 <li>
-	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" role="menuitem" tabindex="-1" href="{config.relative_path}/flags/{posts.flags.flagId}"><i class="fa fa-fw text-muted fa-exclamation-circle"></i> [[topic:view_flag_report]]</a>
+	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" role="menuitem" tabindex="-1" href="{config.relative_path}/flags/{posts.flags.flagId}"><i class="fa fa-fw text-muted fa-exclamation-circle"></i> [[topic:view-flag-report]]</a>
 </li>
 {{{ if (posts.flags.state == "open") }}}
 <li>
-	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/flagResolve" data-flagId="{posts.flags.flagId}" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw text-muted fa-check"></i> [[topic:resolve_flag]]</a>
+	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/flagResolve" data-flagId="{posts.flags.flagId}" role="menuitem" tabindex="-1" href="#"><i class="fa fa-fw text-muted fa-check"></i> [[topic:resolve-flag]]</a>
 </li>
 {{{ end }}}
 {{{ end }}}

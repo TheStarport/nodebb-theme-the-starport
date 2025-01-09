@@ -16,7 +16,7 @@
 					<input class="form-check-input" name="private" type="checkbox"{{{ if group.private }}} checked{{{ end }}}>
 					{{{ if !allowPrivateGroups }}}
 					<p class="form-text">
-						[[groups:details.private_system_help]]
+						[[groups:details.private-system-help]]
 					</p>
 					{{{ end }}}
 					<p class="form-text text-xs m-0">

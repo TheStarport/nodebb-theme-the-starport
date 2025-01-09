@@ -68,11 +68,11 @@
 					<li>
 						<p>
 							{{{ if history.flags.targetPurged }}}
-							<div>[[flags:target_purged]]</div>
+							<div>[[flags:target-purged]]</div>
 							{{{ else }}}
 							<a class="title" href="{config.relative_path}/post/{./pid}">{./title}</a><br />
 							{{{ end }}}
-							<span class="timestamp">[[flags:flagged_timeago_readable, {./timestampISO}, {./timestampReadable}]]</span>
+							<span class="timestamp">[[flags:flagged-timeago-readable, {./timestampISO}, {./timestampReadable}]]</span>
 						</p>
 					</li>
 					{{{ end }}}
