@@ -36,7 +36,7 @@
 				{{{ end }}}
 
 				<a href="{config.relative_path}{{{ if template.category }}}{url}{{{ else }}}/{selectedFilter.url}{querystring}{{{ end }}}" class="btn btn-secondary fw-semibold position-absolute top-100 translate-middle-x start-50 mt-1 hide" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" id="new-topics-alert">
-					<i class="fa fa-fw fa-arrow-up"></i> [[recent:load_new_posts]]
+					<i class="fa fa-fw fa-arrow-up"></i> [[recent:load-new-posts]]
 				</a>
 			</ul>
 

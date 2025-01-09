@@ -1,6 +1,36 @@
-@import "variables";
-
 @import "https://fonts.googleapis.com/css2?family=Electrolize&family=Titillium+Web&display=swap";
+
+// Colors
+$primary-100: #acf9fb;
+$primary-80: #a1ecfb;
+
+$primary-100-65: transparentize($primary-100, .65);
+$primary-100-35: transparentize($primary-100, .35);
+
+$secondary-100: #26dafd;
+$secondary-highlight: #EFFEFE;
+
+$bg-primary: rgba(2, 17, 20, 0.85);
+
+$background-color_1: rgba(0, 0, 0);
+$background-color_2: black;
+$background-color_3: rgba(0, 0, 0, 0.6);
+$background-color_4: rgba(2, 17, 20, 0.65);
+$background-color_5: rgba(2, 17, 20, 0.85);
+$background-color_6: rgba(6, 43, 60, 0.65);
+$background-dim: rgba(50, 50, 50, 0.75);
+
+$border-color1: #4bf2f6;
+$border-color2: rgb(2, 157, 187);
+$border-bottom-color_1: rgb(2, 157, 187);
+$shadow-color1: rgba(75,242,246,.65);
+
+// Fonts
+$font-primary: 'Electrolize', sans-serif;
+$font-secondary: 'Titillium Web', sans-serif;
+$defaultFontWeight: 400;
+$defaultFontStyle: normal;
+$defaultFontDisplay: swap;
 
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -23,7 +53,7 @@ $cyan: #0dcaf0 !default;
 $primary: $blue !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
-$info: $cyan !default;
+$info: $background-color_5 !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-900 !default;

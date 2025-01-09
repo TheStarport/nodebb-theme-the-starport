@@ -1,3 +1,5 @@
+@import "overrides";
+
 @import "fonts";
 @import "mixins";
 @import "common";
@@ -22,5 +24,3 @@
 @import "modules/nprogress";
 @import "modules/paginator";
 @import "modules/filters";
-
-@import "overrides";

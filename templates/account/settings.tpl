@@ -7,7 +7,7 @@
 <div class="row">
 	<div class="col-12 col-md-6">
 		{{{ if !disableCustomUserSkins }}}
-		<h6 class="fw-bold">[[user:select_skin]]</h6>
+		<h6 class="fw-bold">[[user:select-skin]]</h6>
 		<div class="">
 			<select class="form-select form-select-sm" id="bootswatchSkin" data-property="bootswatchSkin">
 				{{{each bootswatchSkinOptions}}}
@@ -44,7 +44,7 @@
 			{{{ if !hideEmail }}}
 			<div class="form-check">
 				<input class="form-check-input" type="checkbox" data-property="showemail" {{{ if settings.showemail }}}checked {{{ end }}}/>
-				<label class="form-check-label text-sm">[[user:show_email]]</label>
+				<label class="form-check-label text-sm">[[user:show-email]]</label>
 			</div>
 			{{{ end }}}
 
@@ -133,13 +133,13 @@
 		<h6 class="fw-bold">[[global:email]]</h6>
 		<div class="">
 			<div class="mb-2">
-				<label class="form-label" for="dailyDigestFreq">[[user:digest_label]]</label>
+				<label class="form-label" for="dailyDigestFreq">[[user:digest-label]]</label>
 				<select class="form-select form-select-sm" id="dailyDigestFreq" data-property="dailyDigestFreq" autocomplete="off">
 					{{{each dailyDigestFreqOptions}}}
 					<option value="{./value}" {{{ if ./selected }}}selected="1"{{{ end }}}>{./name}</option>
 					{{{end}}}
 				</select>
-				<p class="form-text text-xs">[[user:digest_description]]</p>
+				<p class="form-text text-xs">[[user:digest-description]]</p>
 			</div>
 		</div>
 		{{{ end }}}

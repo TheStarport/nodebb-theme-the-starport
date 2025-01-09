@@ -1,6 +1,6 @@
 {
     "name": "nodebb-theme-the-starport",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Enter a description here",
     "main": "lib/theme.js",
     "keywords": [],

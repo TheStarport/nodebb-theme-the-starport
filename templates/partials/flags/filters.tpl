@@ -1,12 +1,12 @@
 <div component="flags/filters" class="d-flex flex-wrap gap-2 pb-3 border-bottom">
 	<div class="btn-group bottom-sheet">
 		<a class="filter-btn btn btn-light btn-sm border {{{ if filters.quick }}}active-filter{{{ end }}} dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-			<span class="filter-label">{{{ if filters.quick }}}[[flags:filter-quick_{./filters.quick}]]{{{ else }}}[[flags:quick-filters]]{{{ end }}}</span>
+			<span class="filter-label">{{{ if filters.quick }}}[[flags:filter-quick-{./filters.quick}]]{{{ else }}}[[flags:quick-filters]]{{{ end }}}</span>
 			<span class="caret"></span>
 		</a>
 		<ul class="dropdown-menu p-1 text-sm">
 			<li>
-				<a class="dropdown-item rounded-1" href="{config.relative_path}/flags?quick=mine">[[flags:filter-quick_mine]]</a>
+				<a class="dropdown-item rounded-1" href="{config.relative_path}/flags?quick=mine">[[flags:filter-quick-mine]]</a>
 			</li>
 		</ul>
 	</div>
