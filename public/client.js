@@ -1,29 +1,41 @@
 'use strict';
 
-/*
-	Hey there!
-
-	This is the client file for your theme. If you need to do any client-side work in javascript,
-	this is where it needs to go.
-
-	You can listen for page changes by writing something like this:
-
-	  $(window).on('action:ajaxify.end', function(ev, data) {
-		var url = data.url;
-		console.log('I am now at: ' + url);
-	  });
-*/
-
-$(window).on('action:ajaxify.end', function(ev, data) {
-    const url = data.url;
-    if (url === 'downloads') {
-        window.downloading = window.downloading || false;
-        const downloadCards = $('a[data-link][data-token][data-name][data-bucket]');
-        downloadCards.each(function() {
-            $(this).on('click', () => window.location.href =
-                `${$(this).attr('data-link')}/file/${$(this).attr('data-bucket')}/${$(this).attr('data-name')}?Authorization=${$(this).attr('data-token')}`)
-        });
-    }
+$(window).on('action:ajaxify.end', function (ev, data) {
+    onPageReady(data);
 });
 
-$(document).on('ready', function () {});
+function onPageReady(data) {
+    const url = data.url;
+
+    const quickReplyBtn = $("button[component='topic/quickreply/button']");
+    if (quickReplyBtn) {
+        handleQuickReply(quickReplyBtn);
+    }
+    else if (url === 'downloads') {
+        renderDownloadArchive();
+    }
+}
+
+function renderDownloadArchive() {
+    window.downloading = window.downloading || false;
+    const downloadCards = $('a[data-link][data-token][data-name][data-bucket]');
+    downloadCards.each(function () {
+        $(this)
+            .on('click', () => window.location.href =
+                `${$(this)
+                    .attr('data-link')}/file/${$(this)
+                    .attr('data-bucket')}/${$(this)
+                    .attr('data-name')}?Authorization=${$(this)
+                    .attr('data-token')}`);
+    });
+}
+
+function handleQuickReply(quickReplyBtn) {
+    quickReplyBtn.prop("disabled", true);
+    const inputArea = $("textarea[component='topic/quickreply/text']");
+
+    inputArea.on('input', function () {
+        const len = $(this).val().length;
+        quickReplyBtn.prop("disabled", len < 5);
+    });
+}

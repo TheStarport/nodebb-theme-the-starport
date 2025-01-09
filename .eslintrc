@@ -1,3 +1,4 @@
 {
-	"extends": "nodebb"
+	"extends": "nodebb",
+    "indent": ["error", 4]
 }
