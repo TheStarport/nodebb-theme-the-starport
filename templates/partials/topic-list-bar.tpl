@@ -27,7 +27,12 @@
 				<!-- IMPORT partials/category/tools.tpl -->
 
 				{{{ if (!feeds:disableRSS && rssFeedUrl) }}}
-				<a class="btn-ghost-sm d-none d-lg-flex align-self-stretch" target="_blank" href="{rssFeedUrl}" itemprop="item"><i class="fa fa-rss text-primary"></i></a>
+                <a class="no-decoration" target="_blank" href="{rssFeedUrl}">
+                    <button class="btn-ghost-sm d-flex gap-2 align-items-center">
+                        <i class="fa fa-rss text-primary"></i>
+                        <span class="d-none d-md-inline fw-semibold">[[global:rss-feed]]</span>
+                    </button>
+                </a>
 				{{{ end }}}
 
 				<a href="{config.relative_path}{{{ if template.category }}}{url}{{{ else }}}/{selectedFilter.url}{querystring}{{{ end }}}" class="btn btn-secondary fw-semibold position-absolute top-100 translate-middle-x start-50 mt-1 hide" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" id="new-topics-alert">

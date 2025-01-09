@@ -1,20 +1,26 @@
 {
 	"id": "nodebb-theme-the-starport",
 	"hooks": [
-      { "hook": "static:app.load", "method": "init" },
-      { "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
-      { "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
-      { "hook": "filter:settings.get", "method": "getAdminSettings" },
-      { "hook": "filter:middleware.renderHeader", "method": "filterMiddlewareRenderHeader" },
-      { "hook": "filter:post.create", "method": "onPostCreate" },
-      { "hook": "filter:user.addToApprovalQueue", "method": "onAddToApprovalQueue" }
+        { "hook": "static:app.load", "method": "init" },
+        { "hook": "filter:admin.header.build", "method": "addAdminNavigation" },
+        { "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
+        { "hook": "filter:settings.get", "method": "getAdminSettings" },
+        { "hook": "filter:middleware.renderHeader", "method": "filterMiddlewareRenderHeader" },
+        { "hook": "filter:post.create", "method": "onPostCreate" },
+        { "hook": "filter:user.addToApprovalQueue", "method": "onAddToApprovalQueue" },
+        { "hook": "filter:widgets.getWidgets", "method": "defineWidgets" },
+        { "hook": "filter:widget.render:recenttopics", "method": "renderRecentTopicsWidget" },
+        { "hook": "filter:widget.render:text", "method": "renderTextWidget" },
+        { "hook": "filter:widget.render:html", "method": "renderHTMLWidget" }
 	],
 	"scripts": [
 		"public/client.js"
 	],
+    "library": "./lib/theme.js",
 	"modules": {
       "../admin/plugins/the-starport.js": "public/admin.js"
 	},
+    "templates": "./templates",
     "staticDirs": {
       "images": "public/images",
       "fonts": "public/fonts",

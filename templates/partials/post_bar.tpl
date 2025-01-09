@@ -14,7 +14,12 @@
 				<!-- IMPORT partials/topic/tools.tpl -->
 
 				{{{ if (!feeds:disableRSS && rssFeedUrl) }}}
-				<a class="btn-ghost-sm d-none d-lg-flex align-self-stretch" target="_blank" href="{rssFeedUrl}"><i class="fa fa-rss text-primary"></i></a>
+                <a class="no-decoration" target="_blank" href="{rssFeedUrl}">
+                    <button class="btn-ghost-sm d-flex gap-2 align-items-center">
+                        <i class="fa fa-rss text-primary"></i>
+                        <span class="d-none d-md-inline fw-semibold">[[global:rss-feed]]</span>
+                    </button>
+                </a>
 				{{{ end }}}
 
 				{{{ if browsingUsers }}}
