@@ -2,7 +2,7 @@
 	<nav class="topic-list-header d-flex flex-nowrap my-2 p-0 border-0 rounded">
 		<div class="d-flex flex-row p-2 panel gap-1 border rounded w-100 align-items-center">
 			<ul component="category/controls" class="d-flex list-unstyled me-auto mb-0 gap-2 align-items-start flex-wrap">
-				{{{ if template.category }}}
+				{{{ if (template.category || template.world) }}}
 				<!-- IMPORT partials/category/watch.tpl -->
 				<!-- IMPORT partials/tags/filter-dropdown-left.tpl -->
 				<!-- IMPORT partials/category/sort.tpl -->
@@ -35,7 +35,7 @@
                 </a>
 				{{{ end }}}
 
-				<a href="{config.relative_path}{{{ if template.category }}}{url}{{{ else }}}/{selectedFilter.url}{querystring}{{{ end }}}" class="btn btn-secondary fw-semibold position-absolute top-100 translate-middle-x start-50 mt-1 hide" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" id="new-topics-alert">
+				<a href="{config.relative_path}{{{ if (template.category || template.world) }}}{url}{{{ else }}}/{selectedFilter.url}{querystring}{{{ end }}}" class="btn btn-secondary fw-semibold position-absolute top-100 translate-middle-x start-50 mt-1 hide" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" id="new-topics-alert">
 					<i class="fa fa-fw fa-arrow-up"></i> [[recent:load-new-posts]]
 				</a>
 			</ul>
