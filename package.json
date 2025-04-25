@@ -1,7 +1,7 @@
 {
     "name": "nodebb-theme-the-starport",
-    "version": "0.2.1",
-    "description": "Enter a description here",
+    "version": "0.3.0",
+    "description": "NodeBB theme for the-starport website",
     "main": "lib/theme.js",
     "keywords": [],
     "license": "MIT",
